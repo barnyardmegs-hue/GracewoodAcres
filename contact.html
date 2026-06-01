@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Visit — Gracewood Acres</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7
+                   M 25 1 L 31 1 L 31 7
+                   M 31 25 L 31 31 L 25 31
+                   M 7 31 L 1 31 L 1 25"
+                stroke="currentColor" stroke-width="2"
+                stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 23 11
+                   A 7 7 0 1 0 23 23
+                   L 23 17
+                   L 18 17"
+                stroke="currentColor" stroke-width="3" fill="none"
+                stroke-linecap="square" stroke-linejoin="miter"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word">
+        <b>Gracewood Acres</b>
+        <small>Limestone · TN</small>
+      </span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="contact.html">Visit</a>
+    </div>
+    <div class="gs-nav-right">
+      <span>LIMESTONE, TN</span>
+      <a class="gs-nav-cta" href="#form">Send a note</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header class="subpage-hero">
+  <div>
+    <div class="gs-eyebrow">Contact · come see us</div>
+    <h1>Walk the<br/>barn. <em>Meet</em><br/>the horses.</h1>
+  </div>
+  <div>
+    <p class="lede">
+      The best way to figure out if Gracewood is the right fit is to come visit.
+      We don't do tours by appointment only — but a heads-up gets you a coach
+      who isn't in the middle of a ride.
+    </p>
+    <p class="lede" style="margin-top:14px;">
+      Drop us a line below, send an email, or call the barn directly.
+      We answer every message personally — typically inside 24 hours.
+    </p>
+  </div>
+</header>
+
+<!-- ═══ FORM + INFO ═══ -->
+<section class="gs-section" id="form">
+  <div class="contact-grid">
+
+    <!-- ─ FORM ─ -->
+    <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.contact-form-note').textContent='Thanks — we\\'ll be in touch within the day.';">
+      <div class="gs-eyebrow">Send a note</div>
+      <h3>Tell us about<br/>your rider.</h3>
+
+      <div class="contact-form-grid">
+        <div class="contact-field">
+          <label for="cf-name">Your name</label>
+          <input id="cf-name" type="text" placeholder="Jane Rider" required />
+        </div>
+        <div class="contact-field">
+          <label for="cf-rider">Rider name &amp; age</label>
+          <input id="cf-rider" type="text" placeholder="Same as above, or…" />
+        </div>
+        <div class="contact-field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" placeholder="you@email.com" required />
+        </div>
+        <div class="contact-field">
+          <label for="cf-phone">Phone</label>
+          <input id="cf-phone" type="tel" placeholder="(423) ___–____" />
+        </div>
+        <div class="contact-field wide">
+          <label for="cf-program">I'm interested in</label>
+          <select id="cf-program">
+            <option>Lessons — drop-in / monthly</option>
+            <option>Lessons — full ride / advanced</option>
+            <option>Training — 30 / 60 / 90 days</option>
+            <option>Boarding — waitlist</option>
+            <option>Barn visit / audit a lesson</option>
+            <option>Other / not sure yet</option>
+          </select>
+        </div>
+        <div class="contact-field wide">
+          <label for="cf-msg">Anything we should know?</label>
+          <textarea id="cf-msg" placeholder="Riding experience, horse history, goals for the season, scheduling notes…"></textarea>
+        </div>
+      </div>
+
+      <div class="contact-form-actions">
+        <span class="contact-form-note">★ We respond within 24 hours</span>
+        <button class="gs-btn gs-btn-primary" type="submit">
+          Send inquiry
+          <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </form>
+
+    <!-- ─ INFO ─ -->
+    <div class="contact-info">
+      <div>
+        <div class="gs-eyebrow">Find us</div>
+        <h3>By the<br/>Nolichucky.</h3>
+        <p>
+          Tucked into the rolling country east of Greeneville,
+          between Limestone and the river. Easy off I-81 — six miles
+          and you're in the gravel drive.
+        </p>
+      </div>
+
+      <dl class="contact-details">
+        <div class="contact-detail">
+          <dt>Phone</dt>
+          <dd>
+            <a href="tel:+14235550199">(423) 555-0199</a>
+            <small>Voicemail after hours</small>
+          </dd>
+        </div>
+        <div class="contact-detail">
+          <dt>Email</dt>
+          <dd>
+            <a href="mailto:hello@gracewoodacres.com">hello@<br/>gracewoodacres.com</a>
+          </dd>
+        </div>
+        <div class="contact-detail">
+          <dt>Barn address</dt>
+          <dd>
+            <a href="#map">Limestone, TN 37681</a>
+            <small>Exact pin sent on visit confirmation</small>
+          </dd>
+        </div>
+        <div class="contact-detail">
+          <dt>Mailing</dt>
+          <dd>
+            P.O. Box 0199<br/>
+            <small>Limestone, TN 37681</small>
+          </dd>
+        </div>
+      </dl>
+
+      <div>
+        <div class="gs-eyebrow" style="margin-bottom: 14px;">Barn hours</div>
+        <div class="hours-table">
+          <div class="hours-row">
+            <span class="hours-day">Mon – Fri</span>
+            <span class="hours-time">8:00 AM — 7:00 PM</span>
+            <span class="hours-status open">Open today</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Saturday</span>
+            <span class="hours-time">7:00 AM — 5:00 PM</span>
+            <span class="hours-status">Lessons</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Sunday</span>
+            <span class="hours-time">By appointment</span>
+            <span class="hours-status">Off / show day</span>
+          </div>
+        </div>
+        <p style="font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 16px;">
+          ★ Visits by appointment recommended — coaches are usually on a horse
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ MAP ═══ -->
+<section class="gs-section paper" id="map">
+  <div class="gs-section-head">
+    <div>
+      <div class="gs-eyebrow">Where we are</div>
+      <h2>Just east<br/>of Limestone.</h2>
+    </div>
+    <p class="lede">
+      The barn sits in the rolling country east of Limestone, off I-81 —
+      easy hauling from Knoxville, Asheville, and the Tri-Cities. We're
+      looking for a bigger place nearby down the road, but this is home for now.
+    </p>
+  </div>
+
+  <div class="map-card">
+    <!-- gridlines + topo via CSS background; pin via positioned divs -->
+    <svg class="map-line" viewBox="0 0 800 600" preserveAspectRatio="none" aria-hidden="true">
+      <!-- river -->
+      <path d="M0 220 Q 150 200 280 250 T 540 290 T 800 240"
+            stroke="#3a5d48" stroke-width="3" fill="none" opacity="0.55" />
+      <!-- highway I-81 -->
+      <path d="M0 380 L 800 320"
+            stroke="#d24b1a" stroke-width="2" fill="none"
+            stroke-dasharray="8 6" opacity="0.85" />
+    </svg>
+
+    <!-- Limestone pin (centered) -->
+    <div class="map-pin-label" style="left: 50%; top: 38%; background: var(--signal);">
+      ⬤ Gracewood Acres · Limestone TN
+    </div>
+    <div class="map-pin" style="left: 50%; top: 44%;"></div>
+
+    <div class="map-legend">
+      <span>N 36.21° W 82.64°</span>
+      <span>Limestone, TN 37681</span>
+      <span>I-81 · 6 mi</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ VISIT CHECKLIST ═══ -->
+<section class="gs-section">
+  <div class="gs-section-head">
+    <div>
+      <div class="gs-eyebrow">First visit</div>
+      <h2>What to<br/>bring.</h2>
+    </div>
+    <p class="lede">
+      Keep it simple. If you're auditing a lesson, just bring yourself. If you're
+      riding, here's the rundown — and we have spares of nearly everything.
+    </p>
+  </div>
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="process-n">01</div>
+      <h4>Helmet</h4>
+      <p>ASTM/SEI-certified, ideally less than five years old. We have loaners in common sizes if you don't have one yet.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-n">02</div>
+      <h4>Boots</h4>
+      <p>Smooth-soled with a small heel. Paddock boots ideal; clean hiking boots are fine for a first lesson.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-n">03</div>
+      <h4>Long pants</h4>
+      <p>Breeches, riding tights, or close-fitting jeans without rivets on the inseam. Save the leather.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-n">04</div>
+      <h4>Water</h4>
+      <p>For rider and visitor both. Tennessee summers mean business, even in the shade of the barn aisle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="gs-section ink">
+  <div class="cta-strip">
+    <div>
+      <div class="gs-eyebrow">See you soon</div>
+      <h2 class="cta-strip-display">Pull in.<br/>Come find<br/>the coach.</h2>
+    </div>
+    <div class="cta-strip-right">
+      <p class="cta-strip-lede">
+        Coffee's usually on in the tack room. We'll be down by the arena or
+        out in the pasture — give a wave and we'll come up.
+      </p>
+      <div class="cta-strip-actions">
+        <a class="gs-btn gs-btn-primary" href="#form">
+          Schedule a visit
+          <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a class="gs-btn gs-btn-ghost light" href="services.html">See services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="gs-footer">
+  <div class="gs-footer-inner">
+    <div>
+      <div class="gs-footer-brand">GRACE<br/>WOOD<span>.</span></div>
+      <p class="gs-footer-tagline">
+        Training · Lessons · Trail<br/>
+        Limestone, TN · and growing
+      </p>
+    </div>
+    <div>
+      <h4>Programs</h4>
+      <ul>
+        <li><a href="services.html">Training</a></li>
+        <li><a href="services.html">Lessons</a></li>
+        <li><a href="services.html">Clinics &amp; trail days</a></li>
+        <li><a href="services.html">Sales horses</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li>Limestone, TN 37681</li>
+        <li>By appointment</li>
+        <li>Mon–Sat</li>
+        <li><a href="contact.html">Directions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="mailto:hello@gracewoodacres.com">Email</a></li>
+        <li><a href="tel:+14235550199">Phone</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="gs-footer-legal">
+    <span>© 2026 Gracewood Acres</span>
+    <span>East Tennessee</span>
+    <span>Site by Gracewood</span>
+  </div>
+</footer>
+
+</body>
+</html>
