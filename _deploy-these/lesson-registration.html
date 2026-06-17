@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lesson Registration &amp; Waiver | Gracewood Acres</title>
+<meta name="description" content="Register a rider for lessons at Gracewood Acres — kids and adults. Experience, helmet acknowledgment, and liability release in one form." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Lesson registration">
+
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/><circle cx="12.1" cy="19.2" r="1" fill="currentColor"/><circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a><a href="boarding.html">Boarding</a><a href="lessons.html">Lessons</a><a href="training.html">Training</a><a href="about.html">About</a><a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right"><span>(423) 607-5656</span><a class="gs-nav-cta" href="forms.html">All forms</a></div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html"><svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg> All forms</a>
+
+  <div class="gs-eyebrow">Lessons</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Lesson rider<br/><em style="font-style:normal;color:var(--signal);">registration</em></h1>
+
+  <div class="form-meta">
+    <span><b>One per rider</b>, kid or adult</span>
+    <span>Includes the <b>liability release</b></span>
+    <span>Helmets <b>required &amp; provided</b></span>
+  </div>
+
+  <div class="legal-warning">
+    <span class="lw-mark">Warning</span>
+    <div>
+      <p><strong>Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</strong></p>
+      <p>Riding is a risk sport. Horses can spook, bolt, buck, or fall. You are choosing to ride anyway, and you accept those risks.</p>
+    </div>
+  </div>
+
+  <form class="gw-form" name="lesson-registration" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-done="form-done">
+    <input type="hidden" name="form-name" value="lesson-registration" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>The rider</h3>
+        <p class="fsection-note">If the rider is under 18, a parent or legal guardian completes and signs this form.</p>
+        <div class="field-grid">
+          <div class="fld"><label>Rider full name <span class="req">*</span></label><input type="text" name="rider_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Date of birth <span class="req">*</span></label><input type="date" name="rider_dob" required /></div>
+          <div class="fld"><label>Parent / guardian (if under 18)</label><input type="text" name="guardian_name" placeholder="Leave blank if adult rider" /></div>
+          <div class="fld"><label>Height &amp; approx. weight</label><input type="text" name="rider_size" placeholder="Helps us match a horse" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>Contact</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@email.com" /><span class="fld-hint">We send your copy here.</span></div>
+          <div class="fld"><label>Emergency contact name <span class="req">*</span></label><input type="text" name="emergency_name" required placeholder="Name" /></div>
+          <div class="fld"><label>Emergency contact phone <span class="req">*</span></label><input type="tel" name="emergency_phone" required placeholder="(423) ___–____" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>Riding background</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Experience level <span class="req">*</span></label><select name="experience" required><option value="">Choose…</option><option>Total beginner — never ridden</option><option>Beginner — a few rides</option><option>Some experience — walk/trot</option><option>Intermediate — canter, independent</option><option>Advanced</option></select></div>
+          <div class="fld"><label>Lesson type</label><select name="lesson_type"><option value="">Choose…</option><option>Private lesson — $60</option><option>Lesson 4-pack — $220</option><option>Youth horsemanship</option><option>Not sure yet</option></select></div>
+          <div class="fld wide"><label>Goals &amp; anything we should know</label><textarea name="goals" placeholder="What the rider hopes to work on, fears, past experience…"></textarea></div>
+          <div class="fld wide"><label>Allergies, medical conditions, or injuries <span class="req">*</span></label><textarea name="medical_notes" required placeholder="e.g. asthma, prior concussion, allergies — or 'none'"></textarea></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>Release, helmet &amp; assumption of risk</h3>
+        <div class="legal-copy">
+          <p>In exchange for lessons and instruction at Gracewood Acres, I, on behalf of the rider named above (and as parent/guardian if the rider is a minor) and our heirs and representatives, agree:</p>
+          <p><strong>1. Assumption of risk.</strong> I understand horseback riding is inherently dangerous, that horses are unpredictable, and that injury or death can result regardless of instruction or experience. I knowingly assume all such risks.</p>
+          <p><strong>2. Release.</strong> I <strong>release, waive, and hold harmless</strong> Gracewood Acres, its owners, instructors, employees, and volunteers from any and all claims for injury, death, or property damage arising from the rider's participation, <strong>including claims based on ordinary negligence</strong>, to the fullest extent permitted by Tennessee law. I understand the farm's liability insurance does not cover injury to participants.</p>
+          <p><strong>3. Helmet.</strong> An ASTM/SEI-approved riding helmet is <strong>required for all mounted activity</strong> and is provided. The rider will wear one at all times while mounted.</p>
+          <p><strong>4. Instruction.</strong> The rider agrees to follow instructor directions. The instructor may end any lesson for safety. I confirm the rider is physically able to ride.</p>
+          <p><strong>5. Medical &amp; governing law.</strong> I authorize emergency medical care if needed and accept responsibility for its cost. This agreement is governed by Tennessee law; if any part is unenforceable, the rest stands.</p>
+        </div>
+        <div style="margin-top:22px;">
+          <label class="legal-check"><input type="checkbox" name="agree_release" value="yes" required /><span><b>I have read and agree</b> to the release and assumption of risk above.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_helmet" value="yes" required /><span>The rider will <b>wear an approved helmet</b> for all mounted activity.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_guardian" value="yes" /><span>If the rider is <b>under 18</b>: I am the parent/legal guardian and sign on their behalf. <span style="color:var(--muted);">(Leave unchecked if adult rider.)</span></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Sign &amp; date</h3>
+        <p class="fsection-note">Typing your name and submitting counts as your electronic signature.</p>
+        <div class="sig-wrap">
+          <div class="fld"><label>Signed by (type full legal name) <span class="req">*</span></label><input type="text" name="signed_by" required placeholder="Your full legal name" /></div>
+          <div class="fld"><label>Date <span class="req">*</span></label><input type="date" name="date_signed" data-today required /></div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head"><label>Signature</label><button type="button" class="sig-clear">Clear</button></div>
+            <div class="sig-pad" data-target="sig-data"><canvas></canvas><div class="sig-pad-base"></div><div class="sig-pad-hint">Sign with your finger or mouse</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. Save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">Submit registration <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Signed &amp; sent</span>
+    <h3>You're registered.</h3>
+    <p>The rider's registration and waiver are with Gracewood Acres and filed for safekeeping. We'll reach out to schedule the first lesson. Save a copy for your records.</p>
+    <div class="fd-actions"><button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button><a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a></div>
+  </div>
+</div>
+
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span><span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span><a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span><a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</p>
+  <div class="gs-footer-legal"><span>© 2026 Gracewood Acres</span><span>East Tennessee</span><span>Real daily care</span></div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Youth &amp; Camp Consent + Medical Release | Gracewood Acres</title>
+<meta name="description" content="Parental consent, medical release, and emergency authorization for Gracewood Acres youth programs, day camp, and homeschool horsemanship." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Youth consent">
+
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/><circle cx="12.1" cy="19.2" r="1" fill="currentColor"/><circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a><a href="boarding.html">Boarding</a><a href="lessons.html">Lessons</a><a href="training.html">Training</a><a href="about.html">About</a><a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right"><span>(423) 607-5656</span><a class="gs-nav-cta" href="forms.html">All forms</a></div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html"><svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg> All forms</a>
+
+  <div class="gs-eyebrow">Youth programs</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Youth &amp; camp<br/><em style="font-style:normal;color:var(--signal);">consent</em></h1>
+
+  <div class="form-meta">
+    <span>Day camp · youth · homeschool</span>
+    <span><b>One per child</b>, per season</span>
+    <span>Signed by <b>parent / guardian</b></span>
+  </div>
+
+  <div class="legal-warning">
+    <span class="lw-mark">Warning</span>
+    <div>
+      <p><strong>Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</strong></p>
+    </div>
+  </div>
+
+  <form class="gw-form" name="youth-consent" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-done="form-done">
+    <input type="hidden" name="form-name" value="youth-consent" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>The child</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Child's full name <span class="req">*</span></label><input type="text" name="child_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Date of birth <span class="req">*</span></label><input type="date" name="child_dob" required /></div>
+          <div class="fld"><label>Program <span class="req">*</span></label><select name="program" required><option value="">Choose…</option><option>Summer day camp</option><option>Youth horsemanship day</option><option>Homeschool horsemanship</option><option>Other youth program</option></select></div>
+          <div class="fld"><label>Session / dates</label><input type="text" name="session" placeholder="e.g. week of July 14, or 'fall semester'" /></div>
+          <div class="fld"><label>Riding experience</label><select name="experience"><option value="">Choose…</option><option>None</option><option>A little</option><option>Some — walk/trot</option><option>Confident rider</option></select></div>
+          <div class="fld"><label>Child's height &amp; approx. weight</label><input type="text" name="child_size" placeholder="Helps us match a horse" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>Parent / guardian</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Full name <span class="req">*</span></label><input type="text" name="guardian_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Relationship to child <span class="req">*</span></label><input type="text" name="relationship" required placeholder="e.g. mother, father, guardian" /></div>
+          <div class="fld"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@email.com" /><span class="fld-hint">We send your copy here.</span></div>
+          <div class="fld wide"><label>Home address</label><input type="text" name="address" placeholder="Street, city, state, ZIP" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>Emergency &amp; pickup</h3>
+        <p class="fsection-note">A second contact if we can't reach you, and who's allowed to pick up the child.</p>
+        <div class="field-grid">
+          <div class="fld"><label>Backup emergency contact <span class="req">*</span></label><input type="text" name="emergency_name" required placeholder="Name" /></div>
+          <div class="fld"><label>Backup contact phone <span class="req">*</span></label><input type="tel" name="emergency_phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld wide"><label>People authorized to pick up the child</label><input type="text" name="pickup_authorized" placeholder="Names — anyone besides the parent/guardian above" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>Medical information</h3>
+        <p class="fsection-note">So we can keep your child safe and respond well in an emergency.</p>
+        <div class="field-grid">
+          <div class="fld"><label>Physician name &amp; phone</label><input type="text" name="physician" placeholder="Dr. name, (423) ___–____" /></div>
+          <div class="fld"><label>Health insurance &amp; policy #</label><input type="text" name="insurance" placeholder="Carrier and policy number" /></div>
+          <div class="fld"><label>Approx. date of last tetanus shot</label><input type="text" name="tetanus" placeholder="Year is fine" /></div>
+          <div class="fld"><label>Current medications</label><input type="text" name="medications" placeholder="Or 'none'" /></div>
+          <div class="fld wide"><label>Allergies (food, medication, insect, environmental) <span class="req">*</span></label><textarea name="allergies" required placeholder="List all, with reaction — or 'none'"></textarea></div>
+          <div class="fld wide"><label>Medical conditions or anything we should know</label><textarea name="conditions" placeholder="Asthma, seizures, anxiety, physical limits, fears — or 'none'"></textarea></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Consent, authorization &amp; release</h3>
+        <div class="legal-copy">
+          <p>As the parent or legal guardian of the child named above, I agree:</p>
+          <p><strong>1. Permission to participate.</strong> I give permission for my child to take part in equine activities, riding, and horsemanship at Gracewood Acres.</p>
+          <p><strong>2. Inherent risk &amp; release.</strong> I understand equine activities are inherently dangerous and that horses are unpredictable; injury or death can occur despite supervision. On behalf of my child, myself, and our heirs, I <strong>release, waive, and hold harmless</strong> Gracewood Acres, its owners, staff, and volunteers from all claims arising from my child's participation, <strong>including ordinary negligence</strong>, to the fullest extent permitted by Tennessee law, and I <strong>indemnify</strong> them against claims arising from my child's participation. I understand the farm's liability insurance does not cover injury to participants.</p>
+          <p><strong>3. Authorization to treat.</strong> If my child is injured or ill and I cannot be reached, I authorize Gracewood Acres to seek and consent to emergency medical, dental, or surgical treatment by a licensed provider, and I accept financial responsibility for that care.</p>
+          <p><strong>4. Helmet &amp; instructions.</strong> My child will wear a provided, approved riding helmet for all mounted activity and follow staff directions.</p>
+          <p><strong>5. Governing law.</strong> This agreement is governed by Tennessee law; if any part is unenforceable, the rest stands.</p>
+        </div>
+        <div style="margin-top:22px;">
+          <label class="legal-check"><input type="checkbox" name="agree_consent" value="yes" required /><span>I am the <b>parent/legal guardian</b> and I <b>consent</b> to my child's participation and agree to the release above.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_treat" value="yes" required /><span>I <b>authorize emergency medical treatment</b> if I can't be reached, and accept responsibility for its cost.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_helmet" value="yes" required /><span>My child will <b>wear a helmet</b> for all mounted activity.</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">06</div>
+      <div class="fsection-body">
+        <h3>Sign &amp; date</h3>
+        <p class="fsection-note">Typing your name and submitting counts as your electronic signature.</p>
+        <div class="sig-wrap">
+          <div class="fld"><label>Parent / guardian (type full legal name) <span class="req">*</span></label><input type="text" name="signed_by" required placeholder="Your full legal name" /></div>
+          <div class="fld"><label>Date <span class="req">*</span></label><input type="date" name="date_signed" data-today required /></div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head"><label>Signature</label><button type="button" class="sig-clear">Clear</button></div>
+            <div class="sig-pad" data-target="sig-data"><canvas></canvas><div class="sig-pad-base"></div><div class="sig-pad-hint">Sign with your finger or mouse</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. Save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">Submit consent <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Signed &amp; sent</span>
+    <h3>Your child's all set.</h3>
+    <p>The consent and medical release are with Gracewood Acres and filed for safekeeping. We'll be in touch with program details. Save a copy for your records.</p>
+    <div class="fd-actions"><button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button><a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a></div>
+  </div>
+</div>
+
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span><span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span><a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span><a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</p>
+  <div class="gs-footer-legal"><span>© 2026 Gracewood Acres</span><span>East Tennessee</span><span>Real daily care</span></div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>
