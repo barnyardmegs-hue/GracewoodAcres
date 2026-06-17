@@ -1,0 +1,38 @@
+# Gracewood Acres — redirect rules for Netlify
+# Format:  /old-path   /new-path   301
+# 301 = permanent redirect (tells Google the page moved for good).
+#
+# These forward common old Wix URLs to the new pages so anyone with an
+# old bookmark or link still lands somewhere useful instead of a 404.
+# Add or edit lines as needed — one rule per line.
+
+/home              /                    301
+/about             /about.html          301
+/about-us          /about.html          301
+/meet-the-crew     /about.html          301
+/the-move          /about.html#waitlist 301
+
+/boarding          /boarding.html       301
+/board             /boarding.html       301
+/lessons           /lessons.html        301
+/youth             /lessons.html        301
+/camp              /lessons.html        301
+/homeschool        /lessons.html        301
+/training          /training.html       301
+/colt-starting     /training.html       301
+
+/services          /boarding.html       301
+/programs          /boarding.html       301
+/pricing           /boarding.html       301
+/services-pricing  /boarding.html       301
+
+/contact           /visit.html          301
+/contact-us        /visit.html          301
+/visit             /visit.html          301
+/directions        /visit.html          301
+/book              /visit.html#form     301
+/booking           /visit.html#form     301
+/tour              /visit.html#form     301
+/newsletter        /visit.html          301
+/waitlist          /visit.html#waitlist 301
+/gallery           /                    301

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Not found — Gracewood Acres</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<style>
+  .nf-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .nf-main {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: clamp(64px, 12vw, 160px) var(--gutter);
+  }
+  .nf-code {
+    font-family: var(--f-mono);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--signal);
+    margin-bottom: 24px;
+  }
+  .nf-title {
+    font-family: var(--f-display);
+    font-weight: 900;
+    font-size: clamp(64px, 12vw, 180px);
+    line-height: 0.86;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    margin: 0 0 24px;
+  }
+  .nf-title em { font-style: normal; color: var(--signal); }
+  .nf-lede {
+    font-family: var(--f-edit);
+    font-size: clamp(18px, 1.8vw, 24px);
+    line-height: 1.45;
+    max-width: 46ch;
+    margin: 0 auto 36px;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+  .nf-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div class="nf-wrap">
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="gs-nav">
+    <div class="gs-nav-inner">
+      <a class="gs-logo" href="index.html">
+        <span class="gs-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M 7 1 L 1 1 L 1 7
+                     M 25 1 L 31 1 L 31 7
+                     M 31 25 L 31 31 L 25 31
+                     M 7 31 L 1 31 L 1 25"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="square" stroke-linejoin="miter"/>
+            <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/>
+          <circle cx="12.1" cy="19.2" r="1" fill="currentColor"/>
+          <circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+          </svg>
+        </span>
+        <span class="gs-logo-word">
+          <b>Gracewood Acres</b>
+          <small>East Tennessee</small>
+        </span>
+      </a>
+      <div class="gs-nav-links">
+        <a href="index.html">Home</a>
+        <a href="boarding.html">Boarding</a>
+        <a href="lessons.html">Lessons</a>
+        <a href="training.html">Training</a>
+        <a href="about.html">About</a>
+        <a href="visit.html">Visit</a>
+      </div>
+      <div class="gs-nav-right">
+        <span>(423) 607-5656</span>
+        <a class="gs-nav-cta" href="visit.html" data-book="tour">Book a tour</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ BODY ═══ -->
+  <main class="nf-main">
+    <div>
+      <div class="nf-code">Error 404 · trail's gone cold</div>
+      <h1 class="nf-title">Off the<br/><em>beaten path.</em></h1>
+      <p class="nf-lede">
+        That page wandered off. Let's get you back to solid ground —
+        head home, browse what we do, or send us a note.
+      </p>
+      <div class="nf-actions">
+        <a class="gs-btn gs-btn-primary" href="index.html">
+          Back home
+          <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
+        </a>
+        <a class="gs-btn gs-btn-ghost" href="visit.html">Get in touch</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="gs-footer">
+    <div class="gs-footer-inner">
+      <div>
+        <div class="gs-footer-brand">GRACE<br/>WOOD<span>.</span></div>
+        <p class="gs-footer-tagline">
+          Boarding · Lessons · Training<br/>
+          East Tennessee · hands-on care
+        </p>
+      </div>
+      <div>
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="boarding.html">Boarding</a></li>
+          <li><a href="lessons.html">Lessons &amp; youth</a></li>
+          <li><a href="training.html">Training</a></li>
+          <li><a href="visit.html#waitlist">Join the waitlist</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>East Tennessee</li>
+          <li>Free farm tours</li>
+          <li>By appointment</li>
+          <li><a href="visit.html">Book a tour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+14236075656">(423) 607-5656</a></li>
+          <li><a href="mailto:meg@gracewoodstables.com">Email Meg</a></li>
+          <li><a href="https://instagram.com/barnyardmegs" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://facebook.com/barnyardmegs" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="gs-footer-statute">
+      WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a
+      participant in equine activities resulting from the inherent risks of equine activities, pursuant to
+      Tennessee Code Annotated, Title 44, Chapter 20.
+    </p>
+    <div class="gs-footer-legal">
+      <span>© 2026 Gracewood Acres</span>
+      <span>East Tennessee</span>
+      <span>Real daily care</span>
+    </div>
+  </footer>
+
+</div>
+<script src="booking.js"></script>
+</body>
+</html>
