@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Liability Waiver &amp; Release | Gracewood Acres</title>
+<meta name="description" content="Gracewood Acres release of liability and assumption of risk. Required for anyone who rides, handles, or is around horses at the farm. Sign online in minutes." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Waiver">
+
+<!-- ═══ NAV ═══ -->
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/>
+          <circle cx="12.1" cy="19.2" r="1" fill="currentColor"/>
+          <circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a>
+      <a href="boarding.html">Boarding</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="training.html">Training</a>
+      <a href="about.html">About</a>
+      <a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right">
+      <span>(423) 607-5656</span>
+      <a class="gs-nav-cta" href="forms.html">All forms</a>
+    </div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html">
+    <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
+    All forms
+  </a>
+
+  <div class="gs-eyebrow">Release of liability</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Liability waiver<br/>&amp; <em style="font-style:normal;color:var(--signal);">assumption of risk</em></h1>
+
+  <div class="form-meta">
+    <span>Required of <b>everyone</b> before being around horses</span>
+    <span>Reading time <b>~3 min</b></span>
+    <span>Minors: signed by <b>parent / guardian</b></span>
+  </div>
+
+  <!-- TN statutory warning -->
+  <div class="legal-warning">
+    <span class="lw-mark">Warning</span>
+    <div>
+      <p><strong>Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</strong></p>
+      <p>Horses can be unpredictable. They can kick, bite, buck, bolt, rear, spook, or fall, regardless of training or the rider's experience. You are choosing to take part anyway, and you accept those risks.</p>
+    </div>
+  </div>
+
+  <!-- ═══ FORM ═══ -->
+  <form class="gw-form" name="waiver" method="POST"
+        data-netlify="true" netlify-honeypot="bot-field"
+        data-done="form-done">
+    <input type="hidden" name="form-name" value="waiver" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <!-- 1. Participant -->
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>Who this is for</h3>
+        <p class="fsection-note">The person who will be riding, handling, or around the horses. If that person is under 18, a parent or legal guardian fills this out and signs for them.</p>
+        <div class="field-grid">
+          <div class="fld">
+            <label>Participant full name <span class="req">*</span></label>
+            <input type="text" name="participant_name" required placeholder="First and last" />
+          </div>
+          <div class="fld">
+            <label>Date of birth <span class="req">*</span></label>
+            <input type="date" name="participant_dob" required />
+          </div>
+          <div class="fld wide">
+            <label>Home address</label>
+            <input type="text" name="address" placeholder="Street, city, state, ZIP" />
+          </div>
+          <div class="fld">
+            <label>Phone <span class="req">*</span></label>
+            <input type="tel" name="phone" required placeholder="(423) ___–____" />
+          </div>
+          <div class="fld">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" name="email" required placeholder="you@email.com" />
+            <span class="fld-hint">We send your copy here.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Activities -->
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>What you'll be doing</h3>
+        <p class="fsection-note">Check anything that applies. This waiver covers all of it.</p>
+        <div class="field-grid cols-3">
+          <label class="legal-check"><input type="checkbox" name="activity" value="Riding lessons" /><span>Riding lessons</span></label>
+          <label class="legal-check"><input type="checkbox" name="activity" value="Riding / mounted" /><span>Riding (any mounted activity)</span></label>
+          <label class="legal-check"><input type="checkbox" name="activity" value="Handling / groundwork" /><span>Handling &amp; groundwork</span></label>
+          <label class="legal-check"><input type="checkbox" name="activity" value="Boarding / visiting my horse" /><span>Visiting / caring for my horse</span></label>
+          <label class="legal-check"><input type="checkbox" name="activity" value="Farm tour / visiting" /><span>Farm tour or visiting</span></label>
+          <label class="legal-check"><input type="checkbox" name="activity" value="Open ride / haul-in" /><span>Open ride / haul-in</span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Acknowledgment of risk -->
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>The risks, plainly stated</h3>
+        <div class="legal-copy">
+          <p>I understand that equine activities are <strong>inherently dangerous</strong> and that being on, near, or around horses carries risks that no amount of care, instruction, or equipment can remove. These risks include, but are not limited to:</p>
+          <ul>
+            <li>The propensity of a horse to behave in ways that may result in injury, harm, or death to people on or around it;</li>
+            <li>The unpredictability of a horse's reaction to sound, sudden movement, unfamiliar objects, people, or other animals;</li>
+            <li>Hazards of surface and subsurface conditions, including uneven ground, mud, rocks, and water;</li>
+            <li>Collisions with other horses, objects, fencing, or structures;</li>
+            <li>The potential for a participant to act in a negligent manner — such as failing to maintain control or not following instructions — that may contribute to injury; and</li>
+            <li>Equipment that may fail or be used improperly.</li>
+          </ul>
+          <p class="legal-emph">I voluntarily choose to participate with full knowledge of these risks, and I assume all risk of injury, death, or property damage arising from them.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Release -->
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>Release &amp; waiver</h3>
+        <div class="legal-copy">
+          <p>In exchange for being permitted to participate in equine activities at Gracewood Acres, I, on behalf of myself, the participant named above, and our heirs, assigns, and personal representatives, agree as follows:</p>
+          <p><strong>1. Release.</strong> I <strong>release, waive, and discharge</strong> Gracewood Acres, its owners, members, employees, agents, instructors, and volunteers (the "Released Parties") from any and all liability, claims, demands, or causes of action for injury, death, or property damage arising out of or related to my participation, <strong>including claims based on the ordinary negligence of the Released Parties</strong>, to the fullest extent permitted by Tennessee law.</p>
+          <p><strong>2. Assumption of risk.</strong> I knowingly and freely assume all such risks, both known and unknown, and assume full responsibility for my participation.</p>
+          <p><strong>3. Indemnification.</strong> I agree to <strong>indemnify and hold harmless</strong> the Released Parties from any loss, liability, damage, or cost they may incur arising out of my participation, whether caused by my own conduct, the conduct of the participant, or otherwise.</p>
+          <p><strong>4. Medical care.</strong> I authorize the Released Parties to arrange emergency medical treatment if needed, and I accept financial responsibility for that care. I confirm I am physically able to participate, or have a physician's approval to do so.</p>
+          <p><strong>5. Equine Activities Act.</strong> I understand this agreement is intended to be consistent with, and in addition to, the protections of the Tennessee Equine Activities Act (TCA Title 44, Chapter 20), and does not limit any protection the Released Parties have under that Act or any other law.</p>
+          <p><strong>6. Governing law.</strong> This agreement is governed by the laws of the State of Tennessee. If any part is found unenforceable, the rest remains in full force. I have read this agreement, understand it is a release of legal rights, and sign it freely.</p>
+        </div>
+        <div style="margin-top:22px;">
+          <label class="legal-check"><input type="checkbox" name="agree_read" value="yes" required /><span><b>I have read and understand this release</b>, and I agree to it on behalf of myself and/or the participant named above.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_risk" value="yes" required /><span>I <b>voluntarily assume all risks</b> of equine activities and understand the Released Parties' liability insurance does not cover injury to participants.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_minor" value="yes" /><span>If the participant is <b>under 18</b>: I am their parent or legal guardian and I sign on their behalf, waiving their claims to the fullest extent the law allows. <span style="color:var(--muted);">(Leave unchecked if the participant is an adult signing for themselves.)</span></span></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Emergency contact -->
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Emergency contact &amp; health notes</h3>
+        <p class="fsection-note">Who we call if something happens, and anything we should know to keep you safe.</p>
+        <div class="field-grid">
+          <div class="fld">
+            <label>Emergency contact name <span class="req">*</span></label>
+            <input type="text" name="emergency_name" required placeholder="Name" />
+          </div>
+          <div class="fld">
+            <label>Emergency contact phone <span class="req">*</span></label>
+            <input type="tel" name="emergency_phone" required placeholder="(423) ___–____" />
+          </div>
+          <div class="fld wide">
+            <label>Allergies, medical conditions, or anything we should know</label>
+            <textarea name="medical_notes" placeholder="e.g. allergic to bee stings, asthma, prior injury — or 'none'"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Signature -->
+    <div class="fsection">
+      <div class="fsection-n">06</div>
+      <div class="fsection-body">
+        <h3>Sign &amp; date</h3>
+        <p class="fsection-note">Type your legal name, sign in the box, and we're done. Typing your name and submitting counts as your electronic signature.</p>
+        <div class="sig-wrap">
+          <div class="fld">
+            <label>Signed by (type full legal name) <span class="req">*</span></label>
+            <input type="text" name="signed_by" required placeholder="Your full legal name" />
+          </div>
+          <div class="fld">
+            <label>Relationship to participant <span class="req">*</span></label>
+            <select name="signer_relationship" required>
+              <option value="">Choose…</option>
+              <option>I am the participant (18 or older)</option>
+              <option>Parent of the participant</option>
+              <option>Legal guardian of the participant</option>
+            </select>
+          </div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head">
+              <label>Signature</label>
+              <button type="button" class="sig-clear">Clear</button>
+            </div>
+            <div class="sig-pad" data-target="sig-data">
+              <canvas></canvas>
+              <div class="sig-pad-base"></div>
+              <div class="sig-pad-hint">Sign with your finger or mouse</div>
+            </div>
+          </div>
+          <div class="fld">
+            <label>Date <span class="req">*</span></label>
+            <input type="date" name="date_signed" data-today required />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- submit -->
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. You'll be able to save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">
+          Submit waiver
+          <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <!-- success -->
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Signed &amp; sent</span>
+    <h3>That's it — you're covered.</h3>
+    <p>Your signed waiver is on its way to Gracewood Acres and filed for safekeeping. Keep a copy for your records — your phone or browser will save it as a PDF.</p>
+    <div class="fd-actions">
+      <button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button>
+      <a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span>
+    <span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span>
+    <a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span>
+    <a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">
+    WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a
+    participant in equine activities resulting from the inherent risks of equine activities, pursuant to
+    Tennessee Code Annotated, Title 44, Chapter 20.
+  </p>
+  <div class="gs-footer-legal">
+    <span>© 2026 Gracewood Acres</span>
+    <span>East Tennessee</span>
+    <span>Real daily care</span>
+  </div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,417 @@
+/* Gracewood Acres — form & legal-document styles
+   Builds on styles.css / subpage.css tokens. Used by every form page. */
+
+/* ─── form page shell ─── */
+.form-page-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(40px, 6vw, 72px) var(--gutter) clamp(64px, 8vw, 110px);
+}
+
+/* legal warning banner (TN Equine Activities Act — TCA Title 44, Ch. 20) */
+.legal-warning {
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  padding: 22px 26px;
+  margin: 0 0 40px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.legal-warning .lw-mark {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--signal);
+  padding: 7px 11px;
+  white-space: nowrap;
+  align-self: start;
+}
+.legal-warning p {
+  margin: 0;
+  font-family: var(--f-mono);
+  font-size: 12.5px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  max-width: 80ch;
+}
+.legal-warning p + p { margin-top: 10px; }
+
+/* ─── intro / meta line above a form ─── */
+.form-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0 0 28px;
+  margin: 0 0 36px;
+  border-bottom: 1px solid var(--rule);
+}
+.form-meta b { color: var(--signal); font-weight: 500; }
+
+/* ─── the form itself ─── */
+.gw-form { display: flex; flex-direction: column; gap: 44px; }
+
+/* numbered legal/section block */
+.fsection {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.fsection-n {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 0.9;
+  color: var(--signal);
+}
+.fsection-body { min-width: 0; }
+.fsection-body > h3 {
+  font-family: var(--f-display);
+  font-weight: 800;
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  margin: 4px 0 18px;
+}
+.fsection-body > .fsection-note {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0 0 22px;
+  max-width: 66ch;
+  text-wrap: pretty;
+}
+
+/* legal prose (the agreement clauses people read + agree to) */
+.legal-copy { display: flex; flex-direction: column; gap: 14px; margin: 0 0 6px; }
+.legal-copy p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink);
+  max-width: 78ch;
+  text-wrap: pretty;
+}
+.legal-copy p strong { font-weight: 700; }
+.legal-copy ul { margin: 2px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.legal-copy li { font-size: 14.5px; line-height: 1.6; max-width: 76ch; text-wrap: pretty; }
+.legal-copy .legal-emph {
+  border-left: 3px solid var(--signal);
+  padding: 4px 0 4px 18px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ─── fields ─── */
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 22px;
+}
+.field-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.fld { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.fld.wide { grid-column: 1 / -1; }
+.fld.half { grid-column: span 1; }
+.fld > label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.fld > label .req { color: var(--signal); }
+.fld input,
+.fld select,
+.fld textarea {
+  appearance: none;
+  border: 0;
+  border-bottom: 1.5px solid var(--ink);
+  background: transparent;
+  padding: 10px 0;
+  font-family: var(--f-body);
+  font-size: 15px;
+  color: var(--ink);
+  border-radius: 0;
+  outline: none;
+  transition: border-color .12s ease;
+}
+.fld textarea { min-height: 86px; resize: vertical; line-height: 1.5; }
+.fld input:focus,
+.fld select:focus,
+.fld textarea:focus { border-bottom-color: var(--signal); }
+.fld input::placeholder,
+.fld textarea::placeholder { color: rgba(14,13,11,0.34); }
+.fld .fld-hint {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  text-transform: none;
+}
+
+/* ─── agreement checkboxes ─── */
+.legal-check {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 16px 18px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  cursor: pointer;
+  transition: border-color .12s ease, background .12s ease;
+}
+.legal-check + .legal-check { margin-top: 12px; }
+.legal-check:hover { border-color: var(--rule-strong); }
+.legal-check input {
+  appearance: none;
+  width: 22px; height: 22px;
+  border: 1.5px solid var(--ink);
+  border-radius: 2px;
+  background: var(--bone);
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  flex: 0 0 22px;
+}
+.legal-check input:checked { background: var(--signal); border-color: var(--signal); }
+.legal-check input:checked::after {
+  content: '✓';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--paper);
+  font-size: 14px;
+  font-weight: 700;
+}
+.legal-check span {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+  text-wrap: pretty;
+}
+.legal-check span b { font-weight: 700; }
+.legal-check[data-checked="1"] { border-color: var(--signal); }
+
+/* ─── signature block ─── */
+.sig-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 28px;
+  align-items: end;
+}
+.sig-pad-field { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 8px; }
+.sig-pad-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.sig-pad-head label {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.sig-clear {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--signal);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+}
+.sig-clear:hover { text-decoration: underline; }
+.sig-pad {
+  position: relative;
+  border: 1.5px solid var(--ink);
+  background: var(--bone);
+  height: 150px;
+  touch-action: none;
+}
+.sig-pad canvas { display: block; width: 100%; height: 100%; cursor: crosshair; }
+.sig-pad-base {
+  position: absolute;
+  left: 18px; right: 18px; bottom: 30px;
+  border-bottom: 1px dashed var(--rule-strong);
+  pointer-events: none;
+}
+.sig-pad-hint {
+  position: absolute;
+  left: 18px; bottom: 12px;
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  pointer-events: none;
+}
+.sig-pad[data-drawn="1"] .sig-pad-hint { display: none; }
+
+/* ─── submit bar ─── */
+.form-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 2px solid var(--ink);
+  padding-top: 28px;
+}
+.form-submit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.form-submit-note {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  max-width: 52ch;
+  line-height: 1.6;
+}
+.form-submit-note.err { color: var(--signal-2); }
+
+/* ─── success panel ─── */
+.form-done {
+  border: 2px solid var(--forest);
+  background: var(--paper);
+  padding: clamp(28px, 4vw, 44px);
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-done.show { display: flex; }
+.form-done .fd-tag {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--forest);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.form-done .fd-tag::before { content: '✓'; font-size: 14px; }
+.form-done h3 {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  margin: 0;
+}
+.form-done p { margin: 0; font-size: 15px; line-height: 1.6; color: var(--ink); max-width: 60ch; }
+.form-done .fd-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+
+/* ─── forms hub (forms.html) ─── */
+.forms-index {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 2px solid var(--ink);
+  border-left: 1px solid var(--rule);
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 34px 32px 36px;
+  border-bottom: 1px solid var(--rule);
+  border-right: 1px solid var(--rule);
+  background: var(--bone);
+  transition: background .14s ease;
+}
+.form-row:hover { background: var(--paper); }
+.form-row-top { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; }
+.form-row-n {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+.form-row-who {
+  font-family: var(--f-mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--signal);
+  border: 1px solid var(--rule-strong);
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+.form-row h3 {
+  font-family: var(--f-display);
+  font-weight: 900;
+  font-size: clamp(24px, 2.6vw, 34px);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  margin: 0;
+}
+.form-row p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--muted); text-wrap: pretty; flex: 1; }
+.form-row .form-row-link {
+  font-family: var(--f-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.form-row:hover .form-row-link { color: var(--signal); }
+.form-row .gs-btn-arrow { width: 14px; height: 14px; }
+
+/* ─── back link ─── */
+.form-back {
+  font-family: var(--f-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+.form-back:hover { color: var(--signal); }
+
+@media (max-width: 860px) {
+  .field-grid, .field-grid.cols-3, .sig-wrap, .forms-index { grid-template-columns: 1fr; }
+  .fsection { grid-template-columns: 1fr; gap: 12px; }
+  .fsection-n { font-size: 26px; }
+  .legal-warning { grid-template-columns: 1fr; gap: 14px; }
+}
+
+/* ─── print ("save your copy") ─── */
+@media print {
+  .gs-nav, .gs-footer, .form-back, .form-submit, .form-done .fd-actions,
+  .sig-clear, #tweaks-host { display: none !important; }
+  body { background: #fff; }
+  .form-page-wrap { padding: 0; max-width: none; }
+  .legal-check, .form-row, .legal-warning { break-inside: avoid; }
+  .fsection { break-inside: avoid; }
+  .sig-pad { background: #fff; }
+  a { color: inherit; text-decoration: none; }
+}

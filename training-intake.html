@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Training Intake Agreement | Gracewood Acres</title>
+<meta name="description" content="Drop a horse for training at Gracewood Acres. Goals, history, vices, vet/farrier, and training terms including daily-care and release language." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Training intake">
+
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/><circle cx="12.1" cy="19.2" r="1" fill="currentColor"/><circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a><a href="boarding.html">Boarding</a><a href="lessons.html">Lessons</a><a href="training.html">Training</a><a href="about.html">About</a><a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right"><span>(423) 607-5656</span><a class="gs-nav-cta" href="forms.html">All forms</a></div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html"><svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg> All forms</a>
+
+  <div class="gs-eyebrow">Training</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Training<br/><em style="font-style:normal;color:var(--signal);">intake</em></h1>
+
+  <div class="form-meta">
+    <span><b>$1,500/mo</b>, board included</span>
+    <span>30 / 60 / 90-day &amp; colt starting</span>
+    <span>Current <b>Coggins</b> required</span>
+  </div>
+
+  <div class="legal-warning">
+    <span class="lw-mark">Warning</span>
+    <div>
+      <p><strong>Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</strong></p>
+    </div>
+  </div>
+
+  <form class="gw-form" name="training-intake" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-done="form-done">
+    <input type="hidden" name="form-name" value="training-intake" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>Owner</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Full name <span class="req">*</span></label><input type="text" name="owner_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@email.com" /><span class="fld-hint">We send your copy here.</span></div>
+          <div class="fld"><label>Home address</label><input type="text" name="address" placeholder="Street, city, state, ZIP" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>The horse</h3>
+        <div class="field-grid cols-3">
+          <div class="fld"><label>Name <span class="req">*</span></label><input type="text" name="horse_name" required placeholder="Horse's name" /></div>
+          <div class="fld"><label>Breed</label><input type="text" name="breed" placeholder="e.g. Quarter Horse" /></div>
+          <div class="fld"><label>Age</label><input type="text" name="age" placeholder="Years" /></div>
+          <div class="fld"><label>Sex</label><select name="sex"><option value="">Choose…</option><option>Mare</option><option>Gelding</option><option>Stallion</option><option>Filly</option><option>Colt</option></select></div>
+          <div class="fld"><label>Height</label><input type="text" name="height" placeholder="Hands" /></div>
+          <div class="fld"><label>Color &amp; markings</label><input type="text" name="color" placeholder="e.g. bay, blaze" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>Program &amp; goals</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Program <span class="req">*</span></label><select name="program" required><option value="">Choose…</option><option>30-day training</option><option>60-day training</option><option>90-day training</option><option>Colt starting</option><option>Problem-solving / specific issue</option><option>Trailer loading</option></select></div>
+          <div class="fld"><label>Requested start date <span class="req">*</span></label><input type="date" name="start_date" required /></div>
+          <div class="fld wide"><label>What do you want to accomplish? <span class="req">*</span></label><textarea name="goals" required placeholder="Be specific — what 'done' looks like for you"></textarea></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>History &amp; handling</h3>
+        <p class="fsection-note">Honest answers keep our trainers and your horse safe. Tell us the bad habits, not just the good.</p>
+        <div class="field-grid">
+          <div class="fld"><label>Current training level</label><input type="text" name="training_level" placeholder="e.g. green-broke, started, finished" /></div>
+          <div class="fld"><label>How does the horse handle on the ground?</label><input type="text" name="ground_manners" placeholder="Leads, ties, picks up feet?" /></div>
+          <div class="fld wide"><label>Known vices or dangerous behaviors <span class="req">*</span></label><textarea name="vices" required placeholder="Bites, kicks, rears, bolts, bucks, cribs, hard to catch — or 'none known'"></textarea></div>
+          <div class="fld wide"><label>Injuries, lameness, or soundness history</label><textarea name="injury_history" placeholder="Past or current issues we should know about"></textarea></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Vet, farrier &amp; health</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Primary veterinarian</label><input type="text" name="vet" value="Dr. Alex Dulaney — East TN Veterinary Hospital" /></div>
+          <div class="fld"><label>Farrier &amp; shoeing cycle</label><input type="text" name="farrier" placeholder="Name, weeks between" /></div>
+          <div class="fld"><label>Equine insurance (mortality / major medical)</label><input type="text" name="insurance" placeholder="Carrier &amp; policy #, or 'none'" /></div>
+          <div class="fld"><label>Daily feed &amp; supplements</label><input type="text" name="feed" placeholder="Type, amount, supplements" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">06</div>
+      <div class="fsection-body">
+        <h3>Training terms</h3>
+        <div class="legal-copy">
+          <p>In exchange for training services at Gracewood Acres, the Owner agrees:</p>
+          <p><strong>1. Fee &amp; payment.</strong> Training is <strong>$1,500 per month, board included</strong>, due at the start of each training month. Veterinary and farrier services are billed through to the Owner at cost plus $10.</p>
+          <p><strong>2. No guaranteed outcome.</strong> The Owner understands that horses are individuals and that <strong>no specific result, timeline, or "fix" is or can be guaranteed</strong>. Gracewood Acres will use reasonable professional judgment and consistent work.</p>
+          <p><strong>3. Training methods.</strong> Gracewood Acres has discretion over training methods, equipment, and daily decisions in the horse's best interest and the safety of people and horses.</p>
+          <p><strong>4. Health requirements.</strong> The Owner certifies the horse is current on vaccinations and has a <strong>negative Coggins within 12 months</strong>, and is sound enough for the requested work or has disclosed any limitations above.</p>
+          <p><strong>5. Emergency care.</strong> If the horse needs veterinary care and the Owner can't be reached, the Owner authorizes Gracewood Acres to obtain it and accepts the cost. (See the <a href="emergency-vet.html" style="color:var(--signal);font-weight:600;">Emergency Vet Authorization</a>.)</p>
+          <p><strong>6. Assumption of risk &amp; release.</strong> Training young or troubled horses carries real risk to the horse. The Owner accepts the <strong>inherent risks</strong> and <strong>releases Gracewood Acres from liability for injury to, illness of, or death of the horse</strong>, except for gross negligence or willful misconduct. Gracewood Acres is not an insurer of the horse. The Owner agrees to <strong>indemnify and hold harmless</strong> Gracewood Acres for damage or injury caused by the horse.</p>
+          <p><strong>7. Term, removal &amp; lien.</strong> Either party may end training with <strong>14 days' written notice</strong>. Unpaid fees may be subject to a <strong>stablekeeper's lien under Tennessee law (TCA Title 66, Ch. 20)</strong>. This agreement is governed by Tennessee law.</p>
+        </div>
+        <div style="margin-top:22px;">
+          <label class="legal-check"><input type="checkbox" name="agree_terms" value="yes" required /><span><b>I have read and agree</b> to the training terms above.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_noguarantee" value="yes" required /><span>I understand <b>no specific result is guaranteed</b> and the trainer has discretion over methods.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_release" value="yes" required /><span>I accept the inherent risks of training and <b>release Gracewood Acres</b> for injury/illness/death of the horse except for gross negligence.</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">07</div>
+      <div class="fsection-body">
+        <h3>Sign &amp; date</h3>
+        <p class="fsection-note">Typing your name and submitting counts as your electronic signature.</p>
+        <div class="sig-wrap">
+          <div class="fld"><label>Signed by (type full legal name) <span class="req">*</span></label><input type="text" name="signed_by" required placeholder="Your full legal name" /></div>
+          <div class="fld"><label>Date <span class="req">*</span></label><input type="date" name="date_signed" data-today required /></div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head"><label>Signature</label><button type="button" class="sig-clear">Clear</button></div>
+            <div class="sig-pad" data-target="sig-data"><canvas></canvas><div class="sig-pad-base"></div><div class="sig-pad-hint">Sign with your finger or mouse</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. Save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">Submit intake <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Signed &amp; sent</span>
+    <h3>We've got it.</h3>
+    <p>Your training intake is with Gracewood Acres and filed for safekeeping. We'll reach out to confirm a drop-off date. Save a copy for your records.</p>
+    <div class="fd-actions"><button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button><a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a></div>
+  </div>
+</div>
+
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span><span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span><a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span><a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</p>
+  <div class="gs-footer-legal"><span>© 2026 Gracewood Acres</span><span>East Tennessee</span><span>Real daily care</span></div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

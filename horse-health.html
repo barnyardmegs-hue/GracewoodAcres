@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Horse Health &amp; Coggins Record | Gracewood Acres</title>
+<meta name="description" content="Vaccination, negative Coggins, deworming, farrier, feed, and health record for your horse at Gracewood Acres. So we care for them right from day one." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Horse health">
+
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/><circle cx="12.1" cy="19.2" r="1" fill="currentColor"/><circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a><a href="boarding.html">Boarding</a><a href="lessons.html">Lessons</a><a href="training.html">Training</a><a href="about.html">About</a><a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right"><span>(423) 607-5656</span><a class="gs-nav-cta" href="forms.html">All forms</a></div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html"><svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg> All forms</a>
+
+  <div class="gs-eyebrow">Intake record</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Horse health<br/>&amp; <em style="font-style:normal;color:var(--signal);">Coggins record</em></h1>
+
+  <div class="form-meta">
+    <span>One <b>per horse</b> at intake</span>
+    <span>Bring your <b>Coggins paperwork</b></span>
+    <span>Keeps your horse safe &amp; the herd healthy</span>
+  </div>
+
+  <div class="legal-warning">
+    <span class="lw-mark">Note</span>
+    <div>
+      <p><strong>Please bring or email a copy of your horse's most recent negative Coggins (EIA) test and vaccination records.</strong> This form captures the essentials so we can care for your horse correctly from the first day — it doesn't replace your vet's records.</p>
+    </div>
+  </div>
+
+  <form class="gw-form" name="horse-health" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-done="form-done">
+    <input type="hidden" name="form-name" value="horse-health" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>Owner &amp; horse</h3>
+        <div class="field-grid cols-3">
+          <div class="fld"><label>Owner name <span class="req">*</span></label><input type="text" name="owner_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@email.com" /></div>
+          <div class="fld"><label>Horse's name <span class="req">*</span></label><input type="text" name="horse_name" required placeholder="Barn / registered name" /></div>
+          <div class="fld"><label>Breed</label><input type="text" name="breed" placeholder="e.g. Quarter Horse" /></div>
+          <div class="fld"><label>Age</label><input type="text" name="age" placeholder="Years" /></div>
+          <div class="fld"><label>Sex</label><select name="sex"><option value="">Choose…</option><option>Mare</option><option>Gelding</option><option>Stallion</option><option>Filly</option><option>Colt</option></select></div>
+          <div class="fld"><label>Color &amp; markings</label><input type="text" name="color" placeholder="e.g. bay, sock" /></div>
+          <div class="fld"><label>Microchip / reg. #</label><input type="text" name="ident" placeholder="If any" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>Coggins (EIA) test</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Date of last negative Coggins <span class="req">*</span></label><input type="date" name="coggins_date" required /></div>
+          <div class="fld"><label>Accession / test #</label><input type="text" name="coggins_number" placeholder="From the lab report" /></div>
+          <div class="fld wide"><label>Testing lab / vet</label><input type="text" name="coggins_lab" placeholder="Who ran it" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>Vaccinations &amp; deworming</h3>
+        <p class="fsection-note">Most recent dates. "Current" is fine if you're not sure of the exact day.</p>
+        <div class="field-grid cols-3">
+          <div class="fld"><label>Tetanus / EWT</label><input type="text" name="vax_ewt" placeholder="Date or 'current'" /></div>
+          <div class="fld"><label>Rabies</label><input type="text" name="vax_rabies" placeholder="Date or 'current'" /></div>
+          <div class="fld"><label>West Nile</label><input type="text" name="vax_wnv" placeholder="Date or 'current'" /></div>
+          <div class="fld"><label>Flu / Rhino</label><input type="text" name="vax_flurhino" placeholder="Date or 'current'" /></div>
+          <div class="fld"><label>Strangles (if given)</label><input type="text" name="vax_strangles" placeholder="Date, or 'none'" /></div>
+          <div class="fld"><label>Last deworming (date &amp; product)</label><input type="text" name="deworming" placeholder="e.g. Apr 2026, ivermectin" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>Farrier &amp; feeding</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Shod or barefoot?</label><select name="shoeing"><option value="">Choose…</option><option>Barefoot</option><option>Front shoes</option><option>All four</option><option>Special / corrective</option></select></div>
+          <div class="fld"><label>Shoeing / trim cycle</label><input type="text" name="farrier_cycle" placeholder="e.g. every 6 weeks" /></div>
+          <div class="fld wide"><label>Feed program <span class="req">*</span></label><textarea name="feed" required placeholder="Grain type &amp; amount, times per day, hay, free-choice?"></textarea></div>
+          <div class="fld wide"><label>Supplements &amp; how to give them</label><input type="text" name="supplements" placeholder="Bring labeled — we feed them at no charge" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Conditions, meds &amp; behavior</h3>
+        <div class="field-grid">
+          <div class="fld wide"><label>Medical conditions or allergies <span class="req">*</span></label><textarea name="conditions" required placeholder="e.g. Cushing's, ulcers, prior colic, metabolic — or 'none'"></textarea></div>
+          <div class="fld wide"><label>Daily or as-needed medications</label><textarea name="medications" placeholder="e.g. Prascend 1 tab AM (we manage Cushing's daily) — or 'none'"></textarea></div>
+          <div class="fld wide"><label>Turnout &amp; behavior notes</label><textarea name="behavior" placeholder="Gets along in a group? Cribs? Hard to catch? Buddy-sour? Blanketing?"></textarea></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">06</div>
+      <div class="fsection-body">
+        <h3>Confirm &amp; sign</h3>
+        <p class="fsection-note">Typing your name and submitting counts as your electronic signature.</p>
+        <div class="legal-copy" style="margin-bottom:18px;">
+          <p>I confirm the information above is accurate to the best of my knowledge and that my horse's negative Coggins and vaccinations are current. I'll provide supporting paperwork and update Gracewood Acres if anything changes.</p>
+        </div>
+        <label class="legal-check" style="margin-bottom:22px;"><input type="checkbox" name="agree_accurate" value="yes" required /><span>This information is <b>accurate</b> and my horse's <b>Coggins &amp; vaccinations are current</b>.</span></label>
+        <div class="sig-wrap">
+          <div class="fld"><label>Signed by (type full legal name) <span class="req">*</span></label><input type="text" name="signed_by" required placeholder="Your full legal name" /></div>
+          <div class="fld"><label>Date <span class="req">*</span></label><input type="date" name="date_signed" data-today required /></div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head"><label>Signature</label><button type="button" class="sig-clear">Clear</button></div>
+            <div class="sig-pad" data-target="sig-data"><canvas></canvas><div class="sig-pad-base"></div><div class="sig-pad-hint">Sign with your finger or mouse</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. Save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">Submit record <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Saved &amp; sent</span>
+    <h3>Got it — thank you.</h3>
+    <p>Your horse's health record is with Gracewood Acres and filed for safekeeping. Don't forget to send over the Coggins paperwork. Save a copy for your records.</p>
+    <div class="fd-actions"><button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button><a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a></div>
+  </div>
+</div>
+
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span><span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span><a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span><a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</p>
+  <div class="gs-footer-legal"><span>© 2026 Gracewood Acres</span><span>East Tennessee</span><span>Real daily care</span></div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

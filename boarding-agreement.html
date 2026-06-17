@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Boarding Agreement | Gracewood Acres</title>
+<meta name="description" content="Gracewood Acres horse boarding agreement and intake. Horse details, terms, payment, and care/custody language. Sign online." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Boarding agreement">
+
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/><circle cx="12.1" cy="19.2" r="1" fill="currentColor"/><circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a><a href="boarding.html">Boarding</a><a href="lessons.html">Lessons</a><a href="training.html">Training</a><a href="about.html">About</a><a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right"><span>(423) 607-5656</span><a class="gs-nav-cta" href="forms.html">All forms</a></div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html"><svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg> All forms</a>
+
+  <div class="gs-eyebrow">Boarding contract</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Boarding<br/><em style="font-style:normal;color:var(--signal);">agreement</em></h1>
+
+  <div class="form-meta">
+    <span>For <b>boarders</b>, signed at move-in</span>
+    <span>Pasture board <b>$400/mo</b></span>
+    <span>Bring a current <b>negative Coggins</b></span>
+  </div>
+
+  <div class="legal-warning">
+    <span class="lw-mark">Warning</span>
+    <div>
+      <p><strong>Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</strong></p>
+    </div>
+  </div>
+
+  <form class="gw-form" name="boarding-agreement" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-done="form-done">
+    <input type="hidden" name="form-name" value="boarding-agreement" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>Owner</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Full name <span class="req">*</span></label><input type="text" name="owner_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@email.com" /><span class="fld-hint">We send your copy here.</span></div>
+          <div class="fld"><label>Home address <span class="req">*</span></label><input type="text" name="address" required placeholder="Street, city, state, ZIP" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>The horse</h3>
+        <div class="field-grid cols-3">
+          <div class="fld"><label>Barn / registered name <span class="req">*</span></label><input type="text" name="horse_name" required placeholder="Horse's name" /></div>
+          <div class="fld"><label>Breed</label><input type="text" name="breed" placeholder="e.g. Quarter Horse" /></div>
+          <div class="fld"><label>Age</label><input type="text" name="age" placeholder="Years" /></div>
+          <div class="fld"><label>Sex</label><select name="sex"><option value="">Choose…</option><option>Mare</option><option>Gelding</option><option>Stallion</option><option>Filly</option><option>Colt</option></select></div>
+          <div class="fld"><label>Color &amp; markings</label><input type="text" name="color" placeholder="e.g. bay, star" /></div>
+          <div class="fld"><label>Microchip / brand / reg. #</label><input type="text" name="ident" placeholder="If any" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>Board plan</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Plan <span class="req">*</span></label><select name="plan" required><option value="">Choose…</option><option>Pasture board — $400 / month</option><option>Barn board — $550 / month (when available)</option></select></div>
+          <div class="fld"><label>Requested start date <span class="req">*</span></label><input type="date" name="start_date" required /></div>
+          <div class="fld wide"><label>Add-ons (optional)</label><input type="text" name="addons" placeholder="e.g. daily oral medication (+$60/mo), blanketing, etc." /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>The terms, in plain English</h3>
+        <div class="legal-copy">
+          <p><strong>1. Board &amp; payment.</strong> Board is due on the <strong>1st</strong> of each month. A <strong>$25 late fee</strong> applies on the 6th. Board includes the care described on our Boarding page for the plan selected. Veterinary and farrier services arranged by Gracewood Acres at the Owner's request are billed through to the Owner at <strong>cost plus $10</strong>.</p>
+          <p><strong>2. Health requirements.</strong> The Owner certifies the horse is current on vaccinations and has a <strong>negative Coggins (EIA) test within the last 12 months</strong>, and will keep both current while boarding. Gracewood Acres may refuse or remove any horse that poses a health or safety risk to the herd.</p>
+          <p><strong>3. Emergency care.</strong> If the horse needs veterinary attention and the Owner cannot be reached, the Owner authorizes Gracewood Acres to obtain care from a licensed veterinarian and accepts financial responsibility for it. (Complete the <a href="emergency-vet.html" style="color:var(--signal);font-weight:600;">Emergency Vet Authorization</a> for standing instructions.)</p>
+          <p><strong>4. Care, custody &amp; risk.</strong> Gracewood Acres will provide attentive daily care but is <strong>not an insurer of the horse's safety</strong>. The Owner understands that injury, illness, or death can occur despite good care, and <strong>releases Gracewood Acres from liability for injury to, illness of, or death of the horse</strong>, except where caused by the gross negligence or willful misconduct of Gracewood Acres. The Owner is encouraged to carry their own equine mortality and major-medical insurance.</p>
+          <p><strong>5. The Owner's liability.</strong> The Owner is responsible for injury or damage caused by the horse and agrees to <strong>indemnify and hold harmless</strong> Gracewood Acres from claims, loss, or damage arising from the horse, except those caused by Gracewood Acres' gross negligence.</p>
+          <p><strong>6. Rate changes &amp; termination.</strong> Either party may end this agreement with <strong>30 days' written notice</strong>. Board rate changes also take 30 days' written notice. Board is non-refundable for partial months once the month has begun.</p>
+          <p><strong>7. Unpaid board / lien.</strong> If board or charges go unpaid, Gracewood Acres may exercise a <strong>stablekeeper's lien on the horse under Tennessee law (TCA Title 66, Chapter 20)</strong> for unpaid amounts, after proper notice.</p>
+          <p><strong>8. General.</strong> This agreement is governed by Tennessee law. Every person handling or riding the horse at the farm must also sign the <a href="waiver.html" style="color:var(--signal);font-weight:600;">Liability Waiver</a>.</p>
+        </div>
+        <div style="margin-top:22px;">
+          <label class="legal-check"><input type="checkbox" name="agree_terms" value="yes" required /><span><b>I have read and agree</b> to the boarding terms above.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_health" value="yes" required /><span>My horse is <b>current on vaccinations and negative Coggins</b>, and I'll keep records on file.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_release" value="yes" required /><span>I understand Gracewood Acres is <b>not an insurer of my horse</b> and I release them for injury/illness/death of the horse except for gross negligence.</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Sign &amp; date</h3>
+        <p class="fsection-note">Typing your name and submitting counts as your electronic signature.</p>
+        <div class="sig-wrap">
+          <div class="fld"><label>Signed by (type full legal name) <span class="req">*</span></label><input type="text" name="signed_by" required placeholder="Your full legal name" /></div>
+          <div class="fld"><label>Date <span class="req">*</span></label><input type="date" name="date_signed" data-today required /></div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head"><label>Signature</label><button type="button" class="sig-clear">Clear</button></div>
+            <div class="sig-pad" data-target="sig-data"><canvas></canvas><div class="sig-pad-base"></div><div class="sig-pad-hint">Sign with your finger or mouse</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. Save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">Submit agreement <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Signed &amp; sent</span>
+    <h3>Welcome to the barn.</h3>
+    <p>Your boarding agreement is on its way to Gracewood Acres and filed for safekeeping. We'll be in touch about move-in. Save a copy for your records.</p>
+    <div class="fd-actions"><button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button><a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a></div>
+  </div>
+</div>
+
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span><span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span><a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span><a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</p>
+  <div class="gs-footer-legal"><span>© 2026 Gracewood Acres</span><span>East Tennessee</span><span>Real daily care</span></div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Emergency Vet Authorization | Gracewood Acres</title>
+<meta name="description" content="Standing instructions for emergency veterinary care of your horse at Gracewood Acres when you can't be reached — vet, spending limit, and authorization." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="page.css" />
+<link rel="stylesheet" href="subpage.css" />
+<link rel="stylesheet" href="forms.css" />
+</head>
+<body data-screen-label="Emergency vet">
+
+<nav class="gs-nav">
+  <div class="gs-nav-inner">
+    <a class="gs-logo" href="index.html">
+      <span class="gs-logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M 7 1 L 1 1 L 1 7 M 25 1 L 31 1 L 31 7 M 31 25 L 31 31 L 25 31 M 7 31 L 1 31 L 1 25" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/><circle cx="12.1" cy="19.2" r="1" fill="currentColor"/><circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="gs-logo-word"><b>Gracewood Acres</b><small>East Tennessee</small></span>
+    </a>
+    <div class="gs-nav-links">
+      <a href="index.html">Home</a><a href="boarding.html">Boarding</a><a href="lessons.html">Lessons</a><a href="training.html">Training</a><a href="about.html">About</a><a href="visit.html">Visit</a>
+    </div>
+    <div class="gs-nav-right"><span>(423) 607-5656</span><a class="gs-nav-cta" href="forms.html">All forms</a></div>
+  </div>
+</nav>
+
+<div class="form-page-wrap">
+  <a class="form-back" href="forms.html"><svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" style="transform:rotate(180deg)"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg> All forms</a>
+
+  <div class="gs-eyebrow">Standing instructions</div>
+  <h1 style="font-family:var(--f-display);font-weight:900;font-size:clamp(40px,7vw,84px);line-height:0.9;text-transform:uppercase;letter-spacing:-0.01em;margin:14px 0 26px;">Emergency vet<br/><em style="font-style:normal;color:var(--signal);">authorization</em></h1>
+
+  <div class="form-meta">
+    <span>One on file <b>per horse</b></span>
+    <span>For when <b>we can't reach you</b></span>
+    <span>Minutes can matter</span>
+  </div>
+
+  <div class="legal-warning">
+    <span class="lw-mark">Why</span>
+    <div>
+      <p><strong>If your horse colics or is injured and we can't reach you, this form tells us exactly what to do — who to call and how far to go — so we never lose time guessing.</strong> We always try to reach you first.</p>
+    </div>
+  </div>
+
+  <form class="gw-form" name="emergency-vet" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-done="form-done">
+    <input type="hidden" name="form-name" value="emergency-vet" />
+    <input type="hidden" name="submitted_at" value="" />
+    <input type="hidden" name="signature_image" id="sig-data" value="" />
+    <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+    <div class="fsection">
+      <div class="fsection-n">01</div>
+      <div class="fsection-body">
+        <h3>Owner &amp; horse</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Owner full name <span class="req">*</span></label><input type="text" name="owner_name" required placeholder="First and last" /></div>
+          <div class="fld"><label>Horse's name <span class="req">*</span></label><input type="text" name="horse_name" required placeholder="Horse's name" /></div>
+          <div class="fld"><label>Your phone <span class="req">*</span></label><input type="tel" name="phone" required placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Second number to try</label><input type="tel" name="phone2" placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>Email <span class="req">*</span></label><input type="email" name="email" required placeholder="you@email.com" /><span class="fld-hint">We send your copy here.</span></div>
+          <div class="fld"><label>Backup contact (if we can't reach you)</label><input type="text" name="backup_contact" placeholder="Name &amp; phone" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">02</div>
+      <div class="fsection-body">
+        <h3>Who to call</h3>
+        <div class="field-grid">
+          <div class="fld"><label>Primary veterinarian <span class="req">*</span></label><input type="text" name="vet_primary" required value="Dr. Alex Dulaney — East TN Veterinary Hospital" /></div>
+          <div class="fld"><label>Primary vet phone</label><input type="tel" name="vet_primary_phone" placeholder="(423) ___–____" /></div>
+          <div class="fld"><label>If primary is unavailable, use</label><input type="text" name="vet_backup" placeholder="Backup vet, or 'nearest available'" /></div>
+          <div class="fld"><label>Farrier</label><input type="text" name="farrier" placeholder="Name &amp; phone" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">03</div>
+      <div class="fsection-body">
+        <h3>How far to go</h3>
+        <p class="fsection-note">Your standing instructions. We follow these if we truly can't reach you in time.</p>
+        <div class="field-grid">
+          <div class="fld"><label>Spending limit before you must be reached <span class="req">*</span></label><input type="text" name="spending_limit" required placeholder="e.g. $1,000" /><span class="fld-hint">Below this, we authorize care and tell you ASAP.</span></div>
+          <div class="fld"><label>Colic surgery — if a vet recommends it</label><select name="colic_surgery"><option value="">Choose…</option><option>Yes — pursue surgery if recommended</option><option>No — medical treatment only, no surgery</option><option>Only if you reach me first</option></select></div>
+          <div class="fld wide"><label>Humane euthanasia — if a vet determines it's the kindest option to prevent suffering</label><select name="euthanasia"><option value="">Choose…</option><option>I authorize it on a vet's recommendation if I can't be reached</option><option>Only if you reach me first</option></select></div>
+          <div class="fld wide"><label>Equine insurance (mortality / major medical)</label><input type="text" name="insurance" placeholder="Carrier &amp; policy # — insurers often must be notified before euthanasia" /></div>
+          <div class="fld wide"><label>Allergies, conditions, or current medications</label><textarea name="medical_notes" placeholder="Anything a vet should know — or 'none'"></textarea></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">04</div>
+      <div class="fsection-body">
+        <h3>Authorization</h3>
+        <div class="legal-copy">
+          <p>I authorize Gracewood Acres, when my horse needs urgent veterinary attention and I cannot be reached after reasonable effort, to <strong>contact the veterinarian above (or the nearest available licensed veterinarian) and authorize examination and treatment</strong> on my behalf, following the instructions I've given on this form.</p>
+          <p>I understand Gracewood Acres will <strong>always try to reach me first</strong> and will only act on these standing instructions when time or my unavailability requires it. I accept <strong>financial responsibility for all veterinary costs</strong> and agree to reimburse Gracewood Acres for any vet, medication, or hauling expenses they advance on my behalf.</p>
+          <p>Acting in good faith on this authorization, Gracewood Acres is <strong>not liable for the outcome</strong> of care obtained or decisions made under it, except in the case of gross negligence. This authorization stays in effect while my horse is at Gracewood Acres, unless I revoke it in writing.</p>
+        </div>
+        <div style="margin-top:22px;">
+          <label class="legal-check"><input type="checkbox" name="agree_auth" value="yes" required /><span>I <b>authorize emergency veterinary care</b> per my instructions above when I can't be reached.</span></label>
+          <label class="legal-check"><input type="checkbox" name="agree_financial" value="yes" required /><span>I accept <b>financial responsibility</b> and will reimburse costs advanced on my behalf.</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="fsection">
+      <div class="fsection-n">05</div>
+      <div class="fsection-body">
+        <h3>Sign &amp; date</h3>
+        <p class="fsection-note">Typing your name and submitting counts as your electronic signature.</p>
+        <div class="sig-wrap">
+          <div class="fld"><label>Signed by (type full legal name) <span class="req">*</span></label><input type="text" name="signed_by" required placeholder="Your full legal name" /></div>
+          <div class="fld"><label>Date <span class="req">*</span></label><input type="date" name="date_signed" data-today required /></div>
+          <div class="sig-pad-field">
+            <div class="sig-pad-head"><label>Signature</label><button type="button" class="sig-clear">Clear</button></div>
+            <div class="sig-pad" data-target="sig-data"><canvas></canvas><div class="sig-pad-base"></div><div class="sig-pad-hint">Sign with your finger or mouse</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-submit">
+      <div class="form-submit-row">
+        <p class="form-submit-note">★ Goes straight to Gracewood Acres and is filed automatically. Save your own copy on the next screen.</p>
+        <button class="gs-btn gs-btn-primary" type="submit">Submit authorization <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></button>
+      </div>
+    </div>
+  </form>
+
+  <div class="form-done" id="form-done">
+    <span class="fd-tag">Signed &amp; sent</span>
+    <h3>On file. Thank you.</h3>
+    <p>Your emergency instructions are with Gracewood Acres and filed for safekeeping. We hope we never need them. Save a copy for your records.</p>
+    <div class="fd-actions"><button class="gs-btn gs-btn-primary" type="button" onclick="gwPrintCopy()">Save my copy (PDF)</button><a class="gs-btn gs-btn-ghost" href="forms.html">Back to all forms</a></div>
+  </div>
+</div>
+
+<footer class="gs-footer">
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span><span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span><a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span><a href="forms.html">All forms</a>
+  </div>
+  <p class="gs-footer-statute">WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a participant in equine activities resulting from the inherent risks of equine activities, pursuant to Tennessee Code Annotated, Title 44, Chapter 20.</p>
+  <div class="gs-footer-legal"><span>© 2026 Gracewood Acres</span><span>East Tennessee</span><span>Real daily care</span></div>
+</footer>
+
+<script src="forms.js"></script>
+</body>
+</html>

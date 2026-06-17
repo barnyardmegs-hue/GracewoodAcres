@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gracewood Acres — Horses, lessons, training</title>
+<title>Gracewood Acres — Horse Boarding, Lessons &amp; Training | East Tennessee</title>
+<meta name="description" content="A horse farm in East Tennessee — boarding, lessons, training, and youth programs. Every horse looked at, handled, and fed by the same people every single day. No shift workers, no guesswork." />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="page.css" />
 <link rel="stylesheet" href="tweaks.css" />
 </head>
-<body data-hero="split">
+<body data-screen-label="Home">
 
 <!-- ════════ NAV ════════ -->
 <nav class="gs-nav">
@@ -22,545 +23,286 @@
                    M 7 31 L 1 31 L 1 25"
                 stroke="currentColor" stroke-width="2"
                 stroke-linecap="square" stroke-linejoin="miter"/>
-          <path d="M 23 11
-                   A 7 7 0 1 0 23 23
-                   L 23 17
-                   L 18 17"
-                stroke="currentColor" stroke-width="3" fill="none"
-                stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M 12 10 A 7 7 0 1 0 20 10" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="22.4" r="1" fill="currentColor"/>
+          <circle cx="12.1" cy="19.2" r="1" fill="currentColor"/>
+          <circle cx="19.9" cy="19.2" r="1" fill="currentColor"/>
         </svg>
       </span>
       <span class="gs-logo-word">
         <b>Gracewood Acres</b>
-        <small>Limestone · TN</small>
+        <small>East Tennessee</small>
       </span>
     </a>
     <div class="gs-nav-links">
       <a class="active" href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Visit</a>
+      <a href="boarding.html">Boarding</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="training.html">Training</a>
+      <a href="about.html">About</a>
+      <a href="visit.html">Visit</a>
     </div>
     <div class="gs-nav-right">
-      <span>LIMESTONE, TN</span>
-      <a class="gs-nav-cta" href="contact.html">Send a note</a>
+      <span>(423) 607-5656</span>
+      <a class="gs-nav-cta" href="visit.html" data-book="tour">Book a tour</a>
     </div>
   </div>
 </nav>
 
-<!-- ════════ HERO — SPLIT ════════ -->
-<section class="hero hero-split" data-hero-variant="split">
-  <div class="hero-split-grid">
-    <div class="hero-split-left">
-      <div class="gs-eyebrow">Limestone, TN  ·  Est. 2025</div>
-      <h1 class="hero-display" data-headline>A working barn in East Tennessee.</h1>
-      <p class="hero-sub" data-sub>We take horses in for training, coach kids and adults in the saddle, and try to leave both better than we found them.</p>
+<!-- ════════ HERO ════════ -->
+<section class="home-hero">
+  <div class="home-hero-head">
+    <div>
+      <div class="gs-eyebrow">Horse farm · East Tennessee</div>
+      <h1 class="home-hero-title">Honest horsemanship. <em>Hands-on,</em> every day.</h1>
+    </div>
+    <div class="home-hero-right">
+      <p class="home-hero-sub" data-sub>A horse farm in East Tennessee — boarding, lessons, training, and youth programs. Every horse gets looked at, handled, and fed by the same people every single day. No shift workers, no guesswork.</p>
       <div class="hero-ctas">
-        <a class="gs-btn gs-btn-primary" href="services.html">
-          See programs
+        <a class="gs-btn gs-btn-primary" href="visit.html" data-book="tour">
+          Book a free tour
           <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
         </a>
-        <a class="gs-btn gs-btn-ghost" href="contact.html">Visit the barn</a>
-      </div>
-      <dl class="hero-meta">
-        <div><dt>Discipline</dt><dd>Western-ish</dd></div>
-        <div><dt>Focus</dt><dd>Training, lessons, time outside</dd></div>
-        <div><dt>Who rides</dt><dd>Kids &amp; adults, beginner up</dd></div>
-        <div><dt>Looking ahead</dt><dd>Room to grow nearby</dd></div>
-      </dl>
-    </div>
-    <div class="hero-split-right">
-      <div class="gs-img hero-img-tall">
-        <div class="gs-img-cap">[ HERO / horse + rider, easy moment at golden hour ]</div>
-      </div>
-      <div class="hero-stamp">
-        <span class="num">5–85</span>
-        <span class="lbl">Ages of riders<br/>we coach</span>
+        <a class="gs-btn gs-btn-ghost" href="#waitlist">Join the waitlist</a>
       </div>
     </div>
+  </div>
+  <div class="gs-img home-hero-photo">
+    <img src="photos/arena-lesson-web.jpg" alt="A group lesson riding together in the arena at Gracewood Acres, hills beyond" />
+    <div class="home-hero-stamp">
+      <span class="num">365</span>
+      <span class="lbl">Hands-on care,<br/>every day</span>
+    </div>
+    <div class="gs-img-cap">[ HERO / a group ride, golden hour ]</div>
   </div>
 </section>
-
-<!-- ════════ HERO — STACK (loaded on demand by Tweaks) ════════ -->
-<template id="tpl-hero-stack">
-<section class="hero hero-stack" data-hero-variant="stack">
-  <div class="hero-stack-top">
-    <div class="gs-eyebrow">Limestone, TN  ·  Est. 2025</div>
-    <p class="hero-sub hero-sub-stack" data-sub>We take horses in for training, coach kids and adults in the saddle, and try to leave both better than we found them.</p>
-  </div>
-  <h1 class="hero-stack-display" data-headline-stack>
-    <span>A WORKING</span>
-    <span class="accent">BARN.</span>
-    <span>EAST TENNESSEE.</span>
-  </h1>
-  <div class="hero-stack-bleed">
-    <div class="gs-img hero-img-wide">
-      <div class="gs-img-cap">[ HERO / wide arena shot, dust + low sun ]</div>
-    </div>
-  </div>
-  <div class="hero-stack-meta">
-    <div class="hero-stack-ctas">
-      <a class="gs-btn gs-btn-primary" href="services.html">
-        See programs
-        <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
-      </a>
-      <a class="gs-btn gs-btn-ghost" href="contact.html">Visit the barn</a>
-    </div>
-    <dl class="hero-meta hero-meta-row">
-      <div><dt>Discipline</dt><dd>Western-ish</dd></div>
-      <div><dt>Focus</dt><dd>Training, lessons, time outside</dd></div>
-      <div><dt>Who rides</dt><dd>Kids &amp; adults, beginner up</dd></div>
-    </dl>
-  </div>
-</section>
-</template>
-
-<!-- ════════ HERO — FRAME (loaded on demand by Tweaks) ════════ -->
-<template id="tpl-hero-frame">
-<section class="hero hero-frame" data-hero-variant="frame">
-  <div class="hero-frame-top">
-    <div class="gs-eyebrow">Limestone, TN  ·  Est. 2025</div>
-    <div class="hero-frame-coord">East Tennessee</div>
-  </div>
-  <h1 class="hero-frame-display" data-headline>A working barn in East Tennessee.</h1>
-  <p class="hero-frame-sub" data-sub>We take horses in for training, coach kids and adults in the saddle, and try to leave both better than we found them.</p>
-  <div class="hero-frame-image">
-    <div class="gs-img hero-img-bleed">
-      <div class="gs-img-cap">[ HERO / wide barn aisle, horses in cross-ties ]</div>
-    </div>
-    <div class="hero-frame-overlay">
-      <div class="hero-frame-stat">
-        <span class="num">1:1</span>
-        <span class="lbl">Riders, horses,<br/>one at a time</span>
-      </div>
-      <div class="hero-frame-stat">
-        <span class="num">5–85</span>
-        <span class="lbl">Ages we coach<br/>kids &amp; adults</span>
-      </div>
-      <div class="hero-frame-ctas">
-        <a class="gs-btn gs-btn-primary" href="services.html">
-          See programs
-          <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
-        </a>
-        <a class="gs-btn gs-btn-ghost light" href="contact.html">Visit the barn</a>
-      </div>
-    </div>
-  </div>
-</section>
-</template>
 
 <!-- ════════ TICKER ════════ -->
-<div class="gs-ticker" aria-hidden="true">
+<div class="gs-ticker" aria-hidden="true" data-section="ticker">
   <div class="gs-ticker-track">
-    <span><span>Training in residence</span><span>Lessons by appointment</span><span>Colt starting</span><span>Trail &amp; ranch work</span><span>Clinics</span><span>Sales horses</span><span>After-school program (coming)</span><span>Room to grow</span></span>
-    <span><span>Training in residence</span><span>Lessons by appointment</span><span>Colt starting</span><span>Trail &amp; ranch work</span><span>Clinics</span><span>Sales horses</span><span>After-school program (coming)</span><span>Room to grow</span></span>
+    <span><span>Pasture board</span><span>Lessons &amp; youth programs</span><span>30/60/90-day training</span><span>Colt starting</span><span>Trailer loading</span><span>Real daily care</span><span>Same hands, every day</span></span>
+    <span><span>Pasture board</span><span>Lessons &amp; youth programs</span><span>30/60/90-day training</span><span>Colt starting</span><span>Trailer loading</span><span>Real daily care</span><span>Same hands, every day</span></span>
   </div>
 </div>
 
-<!-- ════════ ABOUT / WHERE WE'RE AT ════════ -->
-<section class="gs-section paper" data-section="about">
-  <div class="about-grid">
-    <div class="about-left">
-      <div class="gs-eyebrow">About · where we're at</div>
-      <h2 class="about-display">
-        A small barn,<br/>
-        <em>still being<br/>built.</em>
-      </h2>
-      <p class="about-lede">
-        Gracewood is one trainer, a few horses, and a community growing one
-        rider at a time. We don't run a show pipeline. We don't chase
-        certifications. We put actual hours in the saddle, listen to what the
-        horse and the rider are telling us, and try to do a little better
-        than yesterday.
-      </p>
-      <p class="about-lede">
-        A bigger place is the biggest thing on our horizon — room for a hay
-        field, woods to ride, and a proper working farm taking shape. The
-        kind of place that earns the name Acres.
-      </p>
-      <div class="about-sig">
-        <span class="about-sig-from">— The barn</span>
-        <span class="about-sig-loc">Limestone, TN &nbsp;\&nbsp; room to grow</span>
-      </div>
-    </div>
-    <aside class="about-status">
-      <div class="about-status-block">
-        <h4>Right now</h4>
-        <ul>
-          <li><span>·</span> Working out of Limestone, TN</li>
-          <li><span>·</span> Training horses in residence</li>
-          <li><span>·</span> Small private lesson roster</li>
-          <li><span>·</span> A few pasture spots open</li>
-        </ul>
-      </div>
-      <div class="about-status-block">
-        <h4>Next up</h4>
-        <ul>
-          <li><span>·</span> A bigger place nearby, when it's right</li>
-          <li><span>·</span> After-school program</li>
-          <li><span>·</span> Homeschool mornings</li>
-          <li><span>·</span> Trails, training arena, gardens</li>
-        </ul>
-      </div>
-    </aside>
-  </div>
-</section>
-
-<!-- ════════ PROGRAMS ════════ -->
-<section class="gs-section" data-section="programs">
+<!-- ════════ THREE TILES ════════ -->
+<section class="gs-section" data-section="tiles">
   <div class="gs-section-head">
     <div>
       <div class="gs-eyebrow">What we do</div>
-      <h2>Three programs<br/>that matter.</h2>
+      <h2>Three ways in.</h2>
     </div>
     <p class="lede">
-      We keep the list short on purpose. Most of our days are spent putting
-      time on horses, coaching kids and adults, and getting the next thing ready —
-      not selling polish.
+      We keep it simple. Board your horse with real daily care, learn to ride
+      from scratch, or bring us the horse that needs work. No upsell — just the work.
     </p>
   </div>
   <div class="programs-grid">
     <article class="program-card">
       <div class="program-card-top"><span class="program-n">01</span><span class="program-rule"></span></div>
-      <h3>Training</h3>
-      <p>The biggest piece of what we do. Green colts started right, broke horses kept supple, and the ones in between brought back to themselves.</p>
-      <ul>
-        <li>30 / 60 / 90-day in-residence</li>
-        <li>Colt starting &amp; tune-ups</li>
-        <li>Plain weekly notes</li>
-      </ul>
-      <a class="program-link" href="services.html">Training programs <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
+      <h3>Board with us</h3>
+      <div class="gs-price">$400<small>/ month</small></div>
+      <p>Pasture board with real daily care. Twice-daily feeding, free-choice hay, and a hands-on check of every horse, every day.</p>
+      <a class="program-link" href="boarding.html">See boarding <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
     </article>
     <article class="program-card">
       <div class="program-card-top"><span class="program-n">02</span><span class="program-rule"></span></div>
-      <h3>Lessons</h3>
-      <p>One rider, one horse, one hour. Kids who want to learn the right way; adults coming back to it. After-school program in the works as we grow.</p>
-      <ul>
-        <li>Private lessons by appointment</li>
-        <li>Manners, seat, and horsemanship</li>
-        <li>After-school program (coming)</li>
-      </ul>
-      <a class="program-link" href="services.html">Lesson programs <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
+      <h3>Learn to ride</h3>
+      <div class="gs-price">$60<small>/ lesson</small></div>
+      <p>Lessons for kids and adults. Total beginners welcome. Horse, tack, and helmet included — you just bring boots and long pants.</p>
+      <a class="program-link" href="lessons.html">See lessons <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
     </article>
     <article class="program-card">
       <div class="program-card-top"><span class="program-n">03</span><span class="program-rule"></span></div>
-      <h3>Clinics &amp; trail days</h3>
-      <p>Quarterly half-days outside the arena — trail, ranch work, rougher ground. Open to non-members. Sales horses listed here when we have them.</p>
-      <ul>
-        <li>Trail / ranch-work mornings</li>
-        <li>Topic clinics, small group</li>
-        <li>Sales horses (when available)</li>
-      </ul>
-      <a class="program-link" href="services.html">See dates <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
+      <h3>Fix your horse</h3>
+      <div class="gs-price">$1,500<small>/ month</small></div>
+      <p>Problem behavior, trailer loading, starting colts. Honest 30/60/90-day training, board included. No magic — just time and consistent work.</p>
+      <a class="program-link" href="training.html">See training <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
     </article>
   </div>
 </section>
 
-<!-- ════════ ROOM TO GROW ════════ -->
-<section class="gs-section ink" data-section="relocation">
+<!-- ════════ THE GRACEWOOD DIFFERENCE ════════ -->
+<section class="gs-section paper" data-section="difference">
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="gs-eyebrow">The Gracewood difference</div>
+      <h2 class="about-display">
+        The same hands<br/>on your horse,<br/><em>every day.</em>
+      </h2>
+      <p class="about-lede">
+        We're not the fanciest barn in East Tennessee and we have zero interest
+        in being. What we are is a tight crew that's hands-on every day.
+        Meg trains and teaches. Becca runs the barn and knows every horse by name,
+        quirk, and preference. Robbie keeps the fences standing, the pastures
+        mowed, and the water running.
+      </p>
+      <p class="about-lede">
+        Your horse is not dropped off and checked on twice a week. It's fed,
+        handled, and looked at by the same people, every single day.
+      </p>
+      <div class="about-sig">
+        <span class="about-sig-from">That's it. That's the pitch.</span>
+        <span class="about-sig-loc">— The Gracewood crew</span>
+      </div>
+    </div>
+    <aside class="about-status">
+      <div class="about-status-block">
+        <h4>The crew</h4>
+        <ul>
+          <li><span>·</span> <strong>Meg</strong> — trainer</li>
+          <li><span>·</span> <strong>Becca</strong> — barn</li>
+          <li><span>·</span> <strong>Robbie</strong> — grounds</li>
+        </ul>
+      </div>
+      <div class="about-status-block">
+        <h4>The herd</h4>
+        <ul>
+          <li><span>·</span> Tucker — the statesman</li>
+          <li><span>·</span> Henry, Jack, Cardi &amp; co.</li>
+        </ul>
+      </div>
+      <a class="program-link" href="about.html">Meet the crew <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
+    </aside>
+  </div>
+</section>
+
+<!-- ════════ SOMETHING'S COMING — WAITLIST ════════ -->
+<section class="gs-section ink" data-section="waitlist" id="waitlist">
   <div class="reloc-grid">
     <div class="reloc-left">
-      <div class="gs-eyebrow">What's ahead</div>
-      <h2 class="reloc-display">ROOM<br/>TO GROW</h2>
+      <span class="gs-tag wait">Building the waitlist</span>
+      <h2 class="reloc-display">Something<br/>is coming.</h2>
       <p class="reloc-lede">
-        We won't be at Limestone forever. We're looking for a bigger place
-        nearby — room for a hay field, woods to ride, a training arena, animals,
-        and gardens down the line. The barn we'd build if we got to start clean.
-        When it's settled, you'll hear it here first.
+        We're moving to a bigger place. More pasture, real trails, a barn we get
+        to build the way it should be built — simple, functional, and ours. It's
+        the next chapter for Gracewood, and it's more aligned with what we
+        actually are: a working farm, not a show barn.
+      </p>
+      <p class="reloc-lede" style="margin-top:16px;">
+        We're building a waitlist now. Want to be first in line for boarding spots,
+        lesson slots, and the full trail-access program? Get on the list. No spam —
+        just a heads-up when doors open.
       </p>
     </div>
     <div class="reloc-right">
-      <dl class="reloc-meta">
-        <div><dt>Now</dt><dd>Limestone, TN<br/><span class="zip">37681</span></dd></div>
-        <div><dt>Next</dt><dd>A bigger place<br/><span class="zip">nearby</span></dd></div>
-        <div><dt>Timing</dt><dd><span class="status-dot"></span>When it's right</dd></div>
-        <div><dt>Coming</dt><dd>Trails · arena<br/>animals · gardens</dd></div>
-      </dl>
-      <a class="gs-btn gs-btn-primary" href="contact.html">
-        Stay in the loop
-        <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ════════ COACH ════════ -->
-<section class="gs-section" data-section="coach">
-  <div class="coach-grid">
-    <div class="coach-photo">
-      <div class="gs-img coach-img">
-        <div class="gs-img-cap">[ PORTRAIT / coach with a horse, easy moment ]</div>
-      </div>
-      <div class="coach-badge">
-        <span class="num">TN</span>
-        <span class="lbl">East<br/>Tennessee</span>
-      </div>
-    </div>
-    <div class="coach-copy">
-      <div class="gs-eyebrow">Meet the coach</div>
-      <h2 class="coach-display">
-        Quiet horses.<br/>
-        Steady hands.<br/>
-        <em>Kids welcome.</em>
-      </h2>
-      <p class="coach-quote">
-        "Every horse arrives with a history. Every rider arrives with a story.
-        Our job is to listen long enough to figure out what they're trying to tell us,
-        then put the work in to move them both forward."
-      </p>
-      <div class="coach-sig">
-        <span class="coach-sig-name">Owner &amp; Trainer</span>
-        <span class="coach-sig-detail">Limestone, TN · East Tennessee</span>
-      </div>
-      <div class="coach-creds">
-        <div><span class="creds-num">In</span><span>Residence training</span></div>
-        <div><span class="creds-num">1:1</span><span>Lessons by appointment</span></div>
-        <div><span class="creds-num">·</span><span>Kids &amp; adults welcomed</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════ FACILITIES ════════ -->
-<section class="gs-section paper" data-section="facilities">
-  <div class="gs-section-head">
-    <div>
-      <div class="gs-eyebrow">The barn</div>
-      <h2>Built for<br/>the work.</h2>
-    </div>
-    <p class="lede">
-      Working facilities, well-kept. No marble — just sound footing,
-      good fences, fresh water, and room enough to do the job right.
-    </p>
-  </div>
-  <div class="facilities-grid">
-    <div class="facilities-image">
-      <div class="gs-img facility-img">
-        <div class="gs-img-cap">[ FACILITY / drone shot, barn + arenas ]</div>
-      </div>
-    </div>
-    <ul class="facilities-list">
-      <li><span class="fac-label">Outdoor arena</span><span class="fac-size">120 × 220 ft</span><span class="fac-note">sand/fiber footing</span></li>
-      <li><span class="fac-label">Covered round pen</span><span class="fac-size">60 ft</span><span class="fac-note">all-weather</span></li>
-      <li><span class="fac-label">Stalls</span><span class="fac-size">matted</span><span class="fac-note">auto-water · daily picks</span></li>
-      <li><span class="fac-label">Turnout</span><span class="fac-size">pasture</span><span class="fac-note">individual &amp; group</span></li>
-      <li><span class="fac-label">Wash rack</span><span class="fac-size">hot/cold</span><span class="fac-note">2 bays</span></li>
-      <li><span class="fac-label">Hauling access</span><span class="fac-size">I-81 · 6 mi</span><span class="fac-note">gooseneck friendly</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- ════════ SCHEDULE ════════ -->
-<section class="gs-section forest" data-section="schedule">
-  <div class="gs-section-head">
-    <div>
-      <div class="gs-eyebrow">Scheduling</div>
-      <h2>By appointment.<br/>Mostly.</h2>
-    </div>
-    <p class="lede">
-      Lessons run Monday through Saturday on a small standing schedule —
-      we keep it tight on purpose so the focus stays on the horse and rider.
-      Message us for the next opening or to get on the list.
-    </p>
-  </div>
-  <div class="schedule-table">
-    <div class="schedule-row">
-      <div class="sch-day"><span class="sch-day-n">·</span><span class="sch-day-l">Mon&ndash;Fri</span></div>
-      <div class="sch-slots"><span class="sch-slot">Private lessons by reservation</span><span class="sch-slot">After-school slots (limited)</span></div>
-    </div>
-    <div class="schedule-row">
-      <div class="sch-day"><span class="sch-day-n">·</span><span class="sch-day-l">Saturday</span></div>
-      <div class="sch-slots"><span class="sch-slot">Morning lessons</span><span class="sch-slot">Occasional clinics &amp; trail days</span></div>
-    </div>
-    <div class="schedule-row">
-      <div class="sch-day"><span class="sch-day-n">·</span><span class="sch-day-l">Sunday</span></div>
-      <div class="sch-slots"><span class="sch-slot">Quiet day &mdash; trainer ride only</span></div>
-    </div>
-    <div class="schedule-row">
-      <div class="sch-day"><span class="sch-day-n">·</span><span class="sch-day-l">In residence</span></div>
-      <div class="sch-slots"><span class="sch-slot">Training horses ride 5&ndash;6 days a week</span><span class="sch-slot">Weekly note to the owner</span></div>
-    </div>
-  </div>
-  <div class="schedule-footer">
-    <span class="schedule-note">★ Send a note &mdash; we'll find a time</span>
-    <a class="gs-btn gs-btn-primary" href="contact.html">
-      Request a time
-      <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
-    </a>
-  </div>
-</section>
-
-<!-- ════════ TESTIMONIALS ════════ -->
-<section class="gs-section" data-section="testimonials">
-  <div class="gs-section-head">
-    <div>
-      <div class="gs-eyebrow">In their words</div>
-      <h2>From the<br/>folks who<br/>ride here.</h2>
-    </div>
-    <p class="lede">
-      Notes from the people who've come through the barn. New stories
-      get added as the barn keeps growing — we don't put words in mouths.
-    </p>
-  </div>
-  <div class="testi-grid">
-    <figure class="testi-card">
-      <span class="testi-quote-mark">"</span>
-      <blockquote>My daughter is happiest at the barn. She works hard, makes good friends, and is learning to take care of something other than herself.</blockquote>
-      <figcaption>
-        <span class="testi-author">Parent of a lesson kid</span>
-        <span class="testi-meta">Limestone, TN</span>
-      </figcaption>
-    </figure>
-    <figure class="testi-card">
-      <span class="testi-quote-mark">"</span>
-      <blockquote>Sent my colt for sixty days. Came home a quieter, more settled horse. No drama, no surprises — just a horse I could swing a rope off of.</blockquote>
-      <figcaption>
-        <span class="testi-author">Training client</span>
-        <span class="testi-meta">East Tennessee</span>
-      </figcaption>
-    </figure>
-    <figure class="testi-card testi-prompt">
-      <span class="gs-eyebrow">Have one?</span>
-      <h3>Ridden with us?<br/>We'd love<br/>your note.</h3>
-      <p>Plain feedback is the kind we want. Send a few sentences and we'll add it here.</p>
-      <a class="program-link" href="contact.html">Share a note <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg></a>
-    </figure>
-  </div>
-</section>
-
-<!-- ════════ CTA ════════ -->
-<section class="gs-section ink" data-section="cta">
-  <div class="cta-strip">
-    <div>
-      <div class="gs-eyebrow">Visit the barn</div>
-      <h2 class="cta-strip-display">Come on<br/>down.</h2>
-    </div>
-    <div class="cta-strip-right">
-      <p class="cta-strip-lede">
-        Walk the property, meet the horses, watch a ride. We answer every
-        note personally — usually inside a day, sometimes a little longer
-        if we're out at the barn.
-      </p>
-      <div class="cta-strip-actions">
-        <a class="gs-btn gs-btn-primary" href="contact.html">
-          Get in touch
+      <form class="gs-signup" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="return gwSignup(this, event)">
+        <input type="hidden" name="form-name" value="waitlist" />
+        <p hidden><label>Skip: <input name="bot-field" /></label></p>
+        <div class="su-field">
+          <label for="wl-name">Name</label>
+          <input id="wl-name" name="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="su-field">
+          <label for="wl-email">Email</label>
+          <input id="wl-email" name="email" type="email" placeholder="you@email.com" required />
+        </div>
+        <button class="gs-btn gs-btn-primary" type="submit">
+          Join the list
           <svg class="gs-btn-arrow" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="2"/></svg>
-        </a>
-        <a class="gs-btn gs-btn-ghost light" href="services.html">Browse services</a>
-      </div>
+        </button>
+      </form>
+      <p class="gs-signup-note">★ Name and email, that's it. One email when doors open.</p>
     </div>
   </div>
 </section>
 
 <!-- ════════ FOOTER ════════ -->
-<footer class="gs-footer">
+<footer class="gs-footer" data-footer>
   <div class="gs-footer-inner">
     <div>
       <div class="gs-footer-brand">GRACE<br/>WOOD<span>.</span></div>
       <p class="gs-footer-tagline">
-        Training · Lessons · Trail<br/>
-        Limestone, TN · and growing
+        Boarding · Lessons · Training<br/>
+        East Tennessee · hands-on care
       </p>
     </div>
     <div>
       <h4>Programs</h4>
       <ul>
-        <li><a href="services.html">Training</a></li>
-        <li><a href="services.html">Lessons</a></li>
-        <li><a href="services.html">Clinics &amp; trail days</a></li>
-        <li><a href="services.html">Sales horses</a></li>
+        <li><a href="boarding.html">Boarding</a></li>
+        <li><a href="lessons.html">Lessons &amp; youth</a></li>
+        <li><a href="training.html">Training</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="#waitlist">Join the waitlist</a></li>
       </ul>
     </div>
     <div>
       <h4>Visit</h4>
       <ul>
-        <li>Limestone, TN 37681</li>
+        <li>East Tennessee</li>
+        <li>Free farm tours</li>
         <li>By appointment</li>
-        <li>Mon&ndash;Sat</li>
-        <li><a href="contact.html">Directions</a></li>
+        <li><a href="visit.html">Book a tour</a></li>
       </ul>
     </div>
     <div>
       <h4>Connect</h4>
       <ul>
-        <li><a href="contact.html">Email</a></li>
-        <li><a href="contact.html">Phone</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
+        <li><a href="tel:+14236075656">(423) 607-5656</a></li>
+        <li><a href="mailto:meg@gracewoodstables.com">Email Meg</a></li>
+        <li><a href="https://instagram.com/barnyardmegs" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://facebook.com/barnyardmegs" target="_blank" rel="noopener">Facebook</a></li>
       </ul>
     </div>
   </div>
+  <div class="gs-footer-contactline">
+    <span>Gracewood Acres</span><span class="dot">·</span>
+    <span>East Tennessee</span><span class="dot">·</span>
+    <a href="tel:+14236075656">(423) 607-5656</a><span class="dot">·</span>
+    <a href="mailto:meg@gracewoodstables.com">meg@gracewoodstables.com</a><span class="dot">·</span>
+    <span>IG/FB @barnyardmegs</span>
+  </div>
+  <p class="gs-footer-statute">
+    WARNING: Under Tennessee law, an equine professional is not liable for an injury to or the death of a
+    participant in equine activities resulting from the inherent risks of equine activities, pursuant to
+    Tennessee Code Annotated, Title 44, Chapter 20.
+  </p>
   <div class="gs-footer-legal">
     <span>© 2026 Gracewood Acres</span>
     <span>East Tennessee</span>
-    <span>Site by Gracewood</span>
+    <span>Real daily care</span>
   </div>
 </footer>
 
+<!-- shared signup handler (Netlify-friendly; falls back gracefully) -->
+<script>
+  function gwSignup(form, e) {
+    if (!window.fetch) return true;
+    e.preventDefault();
+    var note = form.parentNode.querySelector('.gs-signup-note');
+    var btn = form.querySelector('button[type="submit"]');
+    var data = new URLSearchParams(new FormData(form)).toString();
+    btn.disabled = true;
+    if (note) note.textContent = 'Adding you…';
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: data })
+      .then(function () { form.reset(); if (note) note.textContent = "You're on the list — we'll be in touch when doors open."; })
+      .catch(function () { if (note) note.textContent = 'Hmm, that didn\u2019t send. Email meg@gracewoodstables.com and we\u2019ll add you.'; })
+      .finally(function () { btn.disabled = false; });
+    return false;
+  }
+</script>
+
 <!-- ════════ TWEAKS PANEL (vanilla) ════════ -->
 <div id="tweaks-host" hidden></div>
-
 <script>
 window.addEventListener('load', function () {
 (function () {
-  // ── Defaults — host rewrites this JSON block in place ──
   var DEFAULTS = /*EDITMODE-BEGIN*/{
-    "headline": "A working barn in East Tennessee.",
-    "sub": "We take horses in for training, coach kids and adults in the saddle, and try to leave both better than we found them.",
-    "heroVariant": "split",
-    "showAbout": true,
-    "showPrograms": true,
-    "showRelocation": true,
-    "showCoach": true,
-    "showSchedule": true,
-    "showFacilities": true,
-    "showTestimonials": true,
-    "showCTA": true
+    "sub": "A horse farm in East Tennessee — boarding, lessons, training, and youth programs. Every horse gets looked at, handled, and fed by the same people every single day. No shift workers, no guesswork.",
+    "accent": "#d24b1a",
+    "showTicker": true,
+    "showDifference": true,
+    "showWaitlist": true
   }/*EDITMODE-END*/;
 
+  var ACCENTS = { "#d24b1a": "Clay", "#a3331a": "Barn red", "#9a6a2f": "Saddle" };
   var state = Object.assign({}, DEFAULTS);
 
-  // ── Hero variant swap: split is in the DOM; stack/frame live in <template> ──
-  function ensureHero(variant) {
-    var existing = document.querySelector('section[data-hero-variant="' + variant + '"]');
-    if (existing) return;
-    var tpl = document.getElementById('tpl-hero-' + variant);
-    if (!tpl) return;
-    var node = tpl.content.firstElementChild.cloneNode(true);
-    // Insert right after the split hero so order stays sensible.
-    var splitHero = document.querySelector('section.hero-split');
-    splitHero.parentNode.insertBefore(node, splitHero.nextSibling);
-  }
-
-  // ── Apply state to the page ──
   function apply() {
-    if (state.heroVariant !== 'split') ensureHero(state.heroVariant);
-    document.body.setAttribute('data-hero', state.heroVariant || 'split');
-
-    // Headline text: keep stack hero's split-word structure on its own.
-    document.querySelectorAll('[data-headline]').forEach(function (el) {
-      el.textContent = state.headline;
-    });
-    var stack = document.querySelector('[data-headline-stack]');
-    if (stack) {
-      stack.innerHTML = '';
-      String(state.headline).toUpperCase().split(/\s+/).forEach(function (w, i) {
-        var s = document.createElement('span');
-        if (i % 2 === 1) s.className = 'accent';
-        s.textContent = w;
-        stack.appendChild(s);
-      });
-    }
-    document.querySelectorAll('[data-sub]').forEach(function (el) {
-      el.textContent = state.sub;
-    });
-
-    var map = {
-      about: state.showAbout,
-      programs: state.showPrograms, relocation: state.showRelocation,
-      coach: state.showCoach, facilities: state.showFacilities,
-      schedule: state.showSchedule, testimonials: state.showTestimonials,
-      cta: state.showCTA
-    };
+    document.documentElement.style.setProperty('--signal', state.accent);
+    document.querySelectorAll('[data-sub]').forEach(function (el) { el.textContent = state.sub; });
+    var map = { ticker: state.showTicker, difference: state.showDifference, waitlist: state.showWaitlist };
     Object.keys(map).forEach(function (k) {
       var el = document.querySelector('[data-section="' + k + '"]');
       if (el) el.style.display = map[k] === false ? 'none' : '';
@@ -568,126 +310,90 @@ window.addEventListener('load', function () {
   }
   apply();
 
-  // ── Persist a change back to disk via the host ──
   function setKey(k, v) {
-    state[k] = v;
-    apply();
-    syncPanelInputs();
+    state[k] = v; apply(); syncPanelInputs();
     window.parent.postMessage({ type: '__edit_mode_set_keys', edits: (function () { var o = {}; o[k] = v; return o; })() }, '*');
   }
 
-  // ── Build the panel UI lazily, on first activation ──
   var root = document.getElementById('tweaks-host');
   var built = false;
   function build() {
-    if (built) return;
-    built = true;
+    if (built) return; built = true;
     root.innerHTML = [
       '<div class="twk-panel" id="twk-panel">',
       '  <div class="twk-hd" id="twk-hd"><b>Tweaks</b><button class="twk-x" id="twk-close" aria-label="Close">✕</button></div>',
       '  <div class="twk-body">',
-      '    <div class="twk-sect">Hero copy</div>',
-      '    <div class="twk-row"><div class="twk-lbl"><span>Headline</span></div><input class="twk-field" data-twk-input="headline" type="text"/></div>',
-      '    <div class="twk-row"><div class="twk-lbl"><span>Sub-headline</span></div><input class="twk-field" data-twk-input="sub" type="text"/></div>',
-      '    <div class="twk-sect">Hero layout</div>',
-      '    <div class="twk-row"><div class="twk-lbl"><span>Variant</span></div>',
-      '      <div class="twk-seg" id="twk-variant">',
-      '        <div class="twk-seg-thumb"></div>',
-      '        <button type="button" data-val="split">Split</button>',
-      '        <button type="button" data-val="stack">Stack</button>',
-      '        <button type="button" data-val="frame">Frame</button>',
-      '      </div>',
-      '    </div>',
+      '    <div class="twk-sect">Accent</div>',
+      '    <div class="twk-row"><div class="twk-seg" id="twk-accent">',
+      '      <div class="twk-seg-thumb"></div>',
+      '      <button type="button" data-val="#d24b1a">Clay</button>',
+      '      <button type="button" data-val="#a3331a">Barn red</button>',
+      '      <button type="button" data-val="#9a6a2f">Saddle</button>',
+      '    </div></div>',
+      '    <div class="twk-sect">Hero sub-headline</div>',
+      '    <div class="twk-row"><textarea class="twk-field" data-twk-input="sub" rows="4" style="height:auto;min-height:64px;padding:6px 8px;resize:vertical;font:inherit;"></textarea></div>',
       '    <div class="twk-sect">Sections</div>',
-      ['showAbout','showPrograms','showRelocation','showCoach','showFacilities','showSchedule','showTestimonials','showCTA']
-        .map(function (k) {
-          var label = ({showAbout:'About',showPrograms:'Programs',showRelocation:'Room to grow',showCoach:'Coach',showFacilities:'Facilities',showSchedule:'Schedule',showTestimonials:'Testimonials',showCTA:'CTA strip'})[k];
-          return '<div class="twk-row twk-row-h"><div class="twk-lbl"><span>'+label+'</span></div><button type="button" class="twk-toggle" data-twk-toggle="'+k+'"><i></i></button></div>';
-        }).join(''),
+      ['showTicker','showDifference','showWaitlist'].map(function (k) {
+        var label = ({showTicker:'Ticker',showDifference:'The difference',showWaitlist:'Waitlist'})[k];
+        return '<div class="twk-row twk-row-h"><div class="twk-lbl"><span>'+label+'</span></div><button type="button" class="twk-toggle" data-twk-toggle="'+k+'"><i></i></button></div>';
+      }).join(''),
       '  </div>',
       '</div>'
     ].join('');
 
     root.querySelector('#twk-close').addEventListener('click', dismiss);
-
     root.querySelectorAll('[data-twk-input]').forEach(function (inp) {
       inp.addEventListener('input', function () { setKey(inp.dataset.twkInput, inp.value); });
     });
-
-    var seg = root.querySelector('#twk-variant');
-    seg.querySelectorAll('button').forEach(function (btn) {
-      btn.addEventListener('click', function () { setKey('heroVariant', btn.dataset.val); });
+    root.querySelector('#twk-accent').querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () { setKey('accent', btn.dataset.val); });
     });
-
     root.querySelectorAll('[data-twk-toggle]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var k = btn.dataset.twkToggle;
-        setKey(k, !state[k]);
-      });
+      btn.addEventListener('click', function () { setKey(btn.dataset.twkToggle, !state[btn.dataset.twkToggle]); });
     });
 
-    var hd = root.querySelector('#twk-hd');
-    var panel = root.querySelector('#twk-panel');
-    var off = { x: 16, y: 16 };
+    var hd = root.querySelector('#twk-hd'), panel = root.querySelector('#twk-panel');
     hd.addEventListener('mousedown', function (e) {
       var sx = e.clientX, sy = e.clientY;
       var sr = window.innerWidth - panel.getBoundingClientRect().right;
       var sb = window.innerHeight - panel.getBoundingClientRect().bottom;
       function mv(ev) {
-        off.x = sr - (ev.clientX - sx);
-        off.y = sb - (ev.clientY - sy);
-        panel.style.right = Math.max(8, off.x) + 'px';
-        panel.style.bottom = Math.max(8, off.y) + 'px';
+        panel.style.right = Math.max(8, sr - (ev.clientX - sx)) + 'px';
+        panel.style.bottom = Math.max(8, sb - (ev.clientY - sy)) + 'px';
       }
       function up() { window.removeEventListener('mousemove', mv); window.removeEventListener('mouseup', up); }
-      window.addEventListener('mousemove', mv);
-      window.addEventListener('mouseup', up);
+      window.addEventListener('mousemove', mv); window.addEventListener('mouseup', up);
     });
   }
 
   function syncPanelInputs() {
     if (!built) return;
     root.querySelectorAll('[data-twk-input]').forEach(function (inp) {
-      var v = state[inp.dataset.twkInput];
-      if (inp.value !== v) inp.value = v;
+      if (inp.value !== state[inp.dataset.twkInput]) inp.value = state[inp.dataset.twkInput];
     });
-    [['twk-variant', 'heroVariant']].forEach(function (pair) {
-      var s = root.querySelector('#' + pair[0]);
-      if (!s) return;
-      var btns = s.querySelectorAll('button');
-      var idx = 0;
-      btns.forEach(function (b, i) { if (b.dataset.val === state[pair[1]]) idx = i; });
-      var thumb = s.querySelector('.twk-seg-thumb');
-      thumb.style.left = 'calc(2px + ' + idx + ' * (100% - 4px) / ' + btns.length + ')';
-      thumb.style.width = 'calc((100% - 4px) / ' + btns.length + ')';
-    });
+    var s = root.querySelector('#twk-accent'), btns = s.querySelectorAll('button'), idx = 0;
+    btns.forEach(function (b, i) { if (b.dataset.val === state.accent) idx = i; });
+    var thumb = s.querySelector('.twk-seg-thumb');
+    thumb.style.left = 'calc(2px + ' + idx + ' * (100% - 4px) / ' + btns.length + ')';
+    thumb.style.width = 'calc((100% - 4px) / ' + btns.length + ')';
     root.querySelectorAll('[data-twk-toggle]').forEach(function (btn) {
       btn.setAttribute('data-on', state[btn.dataset.twkToggle] ? '1' : '0');
     });
   }
 
-  function activate() {
-    build();
-    root.hidden = false;
-    syncPanelInputs();
-  }
+  function activate() { build(); root.hidden = false; syncPanelInputs(); }
   function deactivate() { root.hidden = true; }
-  function dismiss() {
-    deactivate();
-    window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*');
-  }
-
+  function dismiss() { deactivate(); window.parent.postMessage({ type: '__edit_mode_dismissed' }, '*'); }
   window.addEventListener('message', function (e) {
     var t = e && e.data && e.data.type;
     if (t === '__activate_edit_mode') activate();
     else if (t === '__deactivate_edit_mode') deactivate();
   });
-  setTimeout(function () {
-    window.parent.postMessage({ type: '__edit_mode_available' }, '*');
-  }, 5000);
+  setTimeout(function () { window.parent.postMessage({ type: '__edit_mode_available' }, '*'); }, 1500);
 })();
 });
 </script>
 
+<script src="booking.js"></script>
 </body>
 </html>
